@@ -5,6 +5,11 @@ state={
 	
 	state_category = town
 	
+	resources={
+		steel=8
+		oil=4
+	}
+	
 	history={
 		owner = UKR
 		victory_points = {

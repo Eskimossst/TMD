@@ -4,24 +4,20 @@ state={
 	manpower = 224110
 	
 	state_category = pastoral
+	
+	resources={
+		oil=4
+	}
 
 	history={
-		owner = SYR
+		owner = FRA
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {
 			2013 1 
 		}
-		1941.11.1 = {
-			owner = SYR
-			controller = SYR
-			add_core_of = SYR
-			buildings = {
-				infrastructure = 5
-				arms_factory = 1
-			}
-		}
+		add_core_of = SYR
 	}
 
 

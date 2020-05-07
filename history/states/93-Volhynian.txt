@@ -1,11 +1,15 @@
 state={
 	id=93
-	name="STATE_93"
+	name="STATE_93" #Volun
+
+	resources={
+		aluminium=6
+	}
 
 	history={
 		owner = UKR
 		victory_points = {
-			513 5 # Łuck
+			513 5 
 		}
 		buildings = {
 			infrastructure = 4

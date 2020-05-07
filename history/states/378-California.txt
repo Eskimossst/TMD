@@ -33,7 +33,6 @@ state={
 			}
 		}
 		add_core_of = USA
-		add_core_of = CLF
 		victory_points = {
 			9814 30
 		}
@@ -45,15 +44,6 @@ state={
 		}
 		victory_points = {
 			9713 1 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 7
-			}
-		}
-		1941.11.1 = {
-			owner = CLF
-			add_core_of = CLF
 		}
 	}
 

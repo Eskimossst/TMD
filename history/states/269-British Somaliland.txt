@@ -6,6 +6,10 @@ state=
 	
 	state_category = enclave
 	
+	resources={
+		oil=2
+	}
+	
 	history= {
 		victory_points = { 
 			10833 1

@@ -19,11 +19,7 @@ state={
 			air_base = 2
 		}
 		
-		add_core_of = KRD
-		1941.11.1 = {
-			owner = KRD
-			controller = KRD
-		}
+		add_core_of = TUR
 	}
 
 	provinces={

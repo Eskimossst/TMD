@@ -8,23 +8,16 @@ state= {
 		chromium=4
 	}
 
-	history=
-	{
-		owner = ENG
+	history={
+		owner = GRE
 		victory_points = {
 			7193 5
 		}
-		add_core_of = CYP
+		add_core_of = GRE
+		add_claim_by = TUR
 		buildings = {
 			infrastructure = 4
 			air_base = 1
-		}
-		1941.11.1 = {
-			owner = VNC
-			controller = VNC
-			add_core_of = VNC
-			add_claim_by = TUR
-			add_core_of = GRE
 		}
 	}
 	provinces={ 7193 13816 13817 }

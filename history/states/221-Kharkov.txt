@@ -7,7 +7,7 @@ state={
 	state_category = city
 	
 	resources={
-		steel=33 # was: 56
+		steel=12 
 	}
 
 	history={
@@ -15,9 +15,18 @@ state={
 		victory_points = {
 			418 10
 		}
+		victory_points = {
+			11397 3
+		}
+		victory_points = {
+			11461 1
+		}
+		victory_points = {
+			9531 1
+		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 1
+			arms_factory = 2
 			air_base = 5
 		}
 		add_core_of = UKR

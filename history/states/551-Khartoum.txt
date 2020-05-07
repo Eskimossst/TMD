@@ -2,6 +2,10 @@
 state={
 	id=551
 	name="STATE_551"
+	
+	resources={
+		oil=4
+	}
 
 	history={
 		owner = ENG
@@ -29,12 +33,6 @@ state={
 		}
 		add_claim_by = EGY
 		add_core_of = SUD
-		1941.11.1 = {
-			owner = EGY
-			controller = EGY
-			add_core_of = EGY
-		}
-
 	}
 
 	provinces={

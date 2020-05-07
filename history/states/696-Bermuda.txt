@@ -5,8 +5,8 @@ state={
 	state_category = small_island
 
 	history={
-		owner = BMD
-		add_core_of = BMD
+		owner = ENG
+		add_core_of = BAH
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

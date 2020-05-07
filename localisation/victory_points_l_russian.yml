@@ -1,10 +1,19 @@
 ﻿l_russian:
  
- #Махно
+ #Украина
  VICTORY_POINTS_429:0 "Гуляйполе"
  VICTORY_POINTS_472:0 "Павлоград"
  VICTORY_POINTS_11561:0 "Кривой рог"
  VICTORY_POINTS_11559:0 "Азов"
+ VICTORY_POINTS_6445:0 "Таганрог"
+ VICTORY_POINTS_11700:0 "Мелитополь"
+ VICTORY_POINTS_11397:0 "Люботин"
+ VICTORY_POINTS_11461:0 "Лозовая"
+ VICTORY_POINTS_9531:0 "Изюм"
+ VICTORY_POINTS_6579:0 "Радчицк"
+ 
+ #Румыния
+ VICTORY_POINTS_3665:0 "Хунедоара"
 
  #ExW
  VICTORY_POINTS_9904:0 "Рим"

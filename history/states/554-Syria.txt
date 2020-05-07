@@ -4,10 +4,14 @@ state={
 	name="STATE_554"
 	manpower = 527797
 	
+	resources={
+		steel=6
+	}
+	
 	state_category = rural
 
 	history={
-		owner = SYR
+		owner = FRA
 		victory_points = {
 			4111 3 
 		}
@@ -15,16 +19,7 @@ state={
 			infrastructure = 3
 			air_base = 1
 		}
-		1941.11.1 = {
-			owner = SYR
-			controller = SYR
-			add_core_of = SYR
-			buildings = {
-				infrastructure = 7
-				air_base = 3
-				industrial_complex = 2
-			}
-		}
+		add_core_of = SYR
 
 	}
 

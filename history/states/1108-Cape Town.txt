@@ -5,6 +5,10 @@ state={
 	manpower = 800000
 
 	state_category = town
+	
+	resources={
+		tungsten=3
+	}
 
 	history={
 		owner = SAF
@@ -26,10 +30,6 @@ state={
 			4696 3
 		}
 		add_core_of = SAF
-		1941.11.1 = {
-			owner = HOL
-			add_core_of = HOL
-		}
 	}
 
 	provinces={

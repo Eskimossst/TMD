@@ -4,11 +4,15 @@ state={
 	manpower = 21056
 	
 	state_category = wasteland
+	
+	resources={
+		oil=8
+	}
 
 	history={
 		owner = SPR
 		add_core_of = WES
-		add_core_of = MOR
+		add_claim_by = MOR
 		buildings = {
 			infrastructure = 1
 			8038 = {
@@ -17,13 +21,6 @@ state={
 		}
 		victory_points = {
 			8038 1
-		}
-		1939.1.1 = {
-			owner = SPA
-		}	
-		1941.11.1 = {
-			owner = WES
-			add_core_of = ALG
 		}
 	}
 	

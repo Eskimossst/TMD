@@ -6,6 +6,10 @@ state={
 	
 	state_category = city
 
+	resources={
+		steel=3
+	}
+
 	history={
 		owner = UKR
 		victory_points = {

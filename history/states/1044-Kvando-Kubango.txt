@@ -5,6 +5,11 @@ state={
 	manpower = 500000
 	
 	state_category = wasteland
+	
+	resources={
+		oil=2
+	}
+	
 	history={
 		owner = POR
 		buildings = {

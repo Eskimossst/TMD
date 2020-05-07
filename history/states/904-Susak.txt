@@ -14,11 +14,6 @@ state=
 		}
 		add_core_of = YUG
 		add_core_of = CRO
-		1941.11.1 = {
-			owner = VNC
-			add_core_of = VNC
-			remove_core_of = YUG
-		}
 	}
 	provinces={
 		13286 	}

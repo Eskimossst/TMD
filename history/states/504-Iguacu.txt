@@ -12,11 +12,6 @@ state={
 
 		}
 		add_core_of = BRA
-		1941.11.1 = {
-			owner = PAU
-			add_core_of = PAU
-		}
-
 	}
 
 	provinces={

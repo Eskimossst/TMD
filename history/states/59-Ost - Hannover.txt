@@ -25,18 +25,6 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = HNN
-
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-				industrial_complex = 1
-			}
-		}
-		1941.11.1 = {
-			owner = SAX
-			add_core_of = SAX
-		}
 	}
 
 	provinces={

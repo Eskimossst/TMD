@@ -4,7 +4,12 @@ state={
 	name="STATE_1008" # Benin/Dahomey
 	manpower = 1351563
 	
+	resources={
+		rubber=2
+	}
+	
 	state_category = pastoral
+	
 	history={
 		owner = FRA
 		add_core_of = DAH
@@ -16,10 +21,6 @@ state={
 			10919 = {
 				naval_base = 1
 			}
-		}
-		1941.11.1 = {
-			owner = VNC
-			controller = VNC
 		}
 	}
 

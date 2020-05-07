@@ -22,19 +22,6 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = PRS
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 10
-				anti_air_building = 5
-				arms_factory = 6
-				industrial_complex = 5
-			}
-		}
-		1941.11.1 = {
-			remove_core_of = PRS
-		}
 	}
 
 	provinces={

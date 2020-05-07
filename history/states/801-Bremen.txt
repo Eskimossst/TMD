@@ -23,18 +23,6 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = HNN
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 6
-				arms_factory = 2
-			}
-		}
-		1941.11.1 = {
-			owner = SAR
-			add_core_of = SAR
-		}
 	}
 
 	provinces={

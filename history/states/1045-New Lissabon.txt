@@ -5,6 +5,11 @@ state={
 	manpower = 500000
 	
 	state_category = pastoral
+	
+	resources={
+		aluminium=4
+	}
+	
 	history={
 		owner = POR
 		buildings = {
@@ -14,9 +19,6 @@ state={
 			10966 1
 		}
 		add_core_of = ANG
-		1941.11.1 = {
-			owner = ANG
-		}
 	}
 
 	provinces={

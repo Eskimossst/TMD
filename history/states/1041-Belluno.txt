@@ -20,20 +20,6 @@ state={
 
 		}
 		add_core_of = ITA
-		add_core_of = VNC
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 2
-
-			}
-
-		}
-		1941.11.1 = {
-			owner = VNC
-			controller = VNC
-			remove_core_of = ITA
-		}
-
 	}
 
 	provinces={

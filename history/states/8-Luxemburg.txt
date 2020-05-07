@@ -7,12 +7,11 @@ state=
 	
 	manpower = 294748
 	resources={
-		steel=5 # was: 8
+		steel=8
 	}
 
-	history=
-	{
-		owner = LUX
+	history={
+		owner = BEL
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
@@ -20,6 +19,7 @@ state=
 		}
 		victory_points = { 6583 5 }
 		add_core_of = LUX
+		add_core_of = BEL
 	}
 
 	provinces= {

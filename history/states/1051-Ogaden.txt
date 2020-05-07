@@ -2,6 +2,10 @@
 state={
 	id=1051
 	name="STATE_1051"
+	
+	resources={
+		oil=1
+	}
 
 	history={
 		owner = ETH
@@ -10,16 +14,7 @@ state={
 
 		}
 		add_core_of = ETH
-		1936.6.1 = {
-			owner = ITA
-			controller = ITA
-
-		}
-		1941.11.1 = {
-			owner = SOM
-			add_core_of = SOM
-		}
-
+		add_core_of = SOM
 	}
 
 	provinces={

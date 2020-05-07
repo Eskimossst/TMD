@@ -5,6 +5,11 @@ state={
 	manpower = 11043
 	
 	state_category = pastoral
+	
+	resources={
+		steel=2
+		oil=4
+	}
 
 	history={
 		owner = SPR
@@ -14,12 +19,6 @@ state={
 			12857 = {
 				naval_base = 1
 			}
-		}
-		1939.1.1 = {
-			owner = SPA
-		}
-		1941.11.1 = {
-			owner = MOR
 		}
 	}
 

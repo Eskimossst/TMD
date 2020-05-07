@@ -4,6 +4,15 @@ oob = "UKR_1936"
 
 set_research_slots = 3
 
+set_convoys = 50
+set_stability = 0.6
+set_war_support = 0.5
+set_fuel_ratio = 0.3
+
+add_ideas = {
+	UKR_political_crisis_1
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -60,12 +69,13 @@ if = {
 	}
 }
 
-set_popularities = {	democratic = 10	fascism = 30	communism = 0
-	neutrality = 60
+set_popularities = {	democratic = 10	fascism = 10	communism = 0
+	neutrality = 12
+	monarchy = 68
     anarchism = 0 
 }
 set_politics = {
-		ruling_party = neutrality
+		ruling_party = monarchy
 		last_election = "1936.1.1"
 		election_frequency = 48
 		elections_allowed = no
@@ -109,7 +119,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/UKR/Pavlo_Skoropadsky.dds"
 	expire = "1945.4.26"
-	ideology = oligarchism
+	ideology = monarchy_ideology
 	traits = {
 		
 	}
@@ -119,7 +129,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/UKR/Danylo_Skoropadskyi.dds"
 	expire = "1953.3.1"
-	ideology = oligarchism
+	ideology = monarchy_ideology
 	traits = {
 		
 	}

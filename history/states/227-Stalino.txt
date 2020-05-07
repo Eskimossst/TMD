@@ -5,6 +5,10 @@ state={
 	manpower = 3767336
 	
 	state_category = city
+	
+	resources={
+		steel=6
+	}
 
 	history={
 		owner = UKR

@@ -14,18 +14,6 @@ state={
 			air_base = 3
 		}
 		add_core_of = GER
-		add_core_of = PRS
-
-		1939.1.1 ={
-			buildings = {
-				radar_station = 1
-				arms_factory = 3
-			}
-		}
-		1941.11.1 = {
-			owner = SAR
-			add_core_of = SAR
-		}
 	}
 
 	provinces={

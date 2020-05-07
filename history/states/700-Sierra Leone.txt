@@ -4,9 +4,12 @@ state={
 	manpower = 1768500
 	
 	state_category = pastoral
+	
+	resources={
+		rubber=3
+	}
 
-	history=
-	{
+	history={
 		owner = ENG
 		add_core_of = SIE
 		victory_points = {
@@ -18,11 +21,6 @@ state={
 				naval_base = 3
 			}
 		}
-		1941.11.1 = {
-			owner = VNC
-			controller = VNC
-		}
-
 	}
 	
 	provinces={

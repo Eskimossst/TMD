@@ -5,6 +5,10 @@ state={
 	
 	state_category = small_island
 
+	resources={
+		oil=1
+	}
+
 	history={
 		owner = ENG
 		buildings = {

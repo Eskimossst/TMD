@@ -4,6 +4,10 @@ state={
 	manpower=24725	
 	state_category = tiny_island
 
+	resources={
+		rubber=1
+	}
+
 	history={
 		owner = POR
 		buildings = {

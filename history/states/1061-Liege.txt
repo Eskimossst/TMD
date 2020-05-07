@@ -18,7 +18,6 @@ state={
 
 		}
 		add_core_of = BEL
-		add_core_of = WLN
 	}
 
 	provinces={

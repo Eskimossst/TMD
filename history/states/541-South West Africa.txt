@@ -5,6 +5,10 @@ state={
 	manpower = 247155
 	
 	state_category = pastoral
+	
+	resources={
+		oil=4
+	}
 
 	history={
 		owner = SAF

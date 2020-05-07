@@ -6,6 +6,10 @@ state={
 	
 	state_category = rural
 	
+	resources={
+		chromium=4
+	}
+	
 	history={
 		add_core_of = MAD
 		owner = FRA

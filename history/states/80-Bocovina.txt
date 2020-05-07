@@ -5,9 +5,10 @@ state={
 	
 	state_category = rural
 	
-	history=
-	{
-		owner = ROM
+	
+	
+	history={
+		owner = UKR
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1

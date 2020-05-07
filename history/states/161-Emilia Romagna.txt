@@ -24,10 +24,6 @@ state={
 			}
 		}
 		add_core_of = ITA
-		1941.11.1 = {
-			owner = VAT
-			add_core_of = VAT
-		}
 	}
 
 	provinces={

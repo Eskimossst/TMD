@@ -5,6 +5,10 @@ state={
 	manpower = 543817
 	
 	state_category = pastoral
+	
+	resources={
+		oil=2
+	}
 
 	history={
 		owner = FRA
@@ -14,11 +18,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-		}
-		1941.11.1 = {
-			owner = VNC
-			controller = VNC
-			add_claim_by = ALG
 		}
 	}
 

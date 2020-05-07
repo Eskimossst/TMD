@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = TUR
+		owner = GRE
 		
 		victory_points = {
 			4112 5 
@@ -24,6 +24,8 @@ state={
 			}
 		}
 		add_core_of = TUR
+		
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

@@ -11,19 +11,6 @@ state={
 			arms_factory = 1
 		}
 		add_core_of = GER
-		add_core_of = BDN
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-
-			}
-
-		}
-		1941.11.1 = {
-			owner = BAV
-			add_core_of = BAV
-		}
-
 	}
 
 	provinces={

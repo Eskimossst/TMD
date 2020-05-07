@@ -6,6 +6,10 @@ state={
 	
 	state_category = town
 
+	resources={
+		aluminium=6
+	}
+	
 	history={
 		victory_points = {
 			472 1

@@ -20,17 +20,6 @@ state={
 			industrial_complex = 1
 		}
 		add_core_of = GER
-		add_core_of = TRN
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 3
-				arms_factory = 2
-			}
-		}
-		1941.11.1 = {
-			owner = SAX
-			add_core_of = SAX
-		}
 	}
 
 	provinces={

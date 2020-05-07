@@ -21,17 +21,6 @@ state={
 
 		}
 		add_core_of = GER
-		add_core_of = OLD
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				dockyard = 3
-			}
-		}
-		1941.11.1 = {
-			owner = SAR
-			add_core_of = SAR
-		}
 	}
 
 	provinces={

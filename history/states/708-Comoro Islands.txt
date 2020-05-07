@@ -4,6 +4,10 @@ state={
 	manpower = 126703
 
 	state_category = small_island
+	
+	resources={
+		aluminium=1
+	}
 
 	history={
 		owner = FRA

@@ -1,7 +1,7 @@
-version="1.9"
+version="1.9.2"
 tags={
 	"Alternative History"
-	"Map"
+	"National Focuses"
 	"Historical"
 	"Ideologies"
 }

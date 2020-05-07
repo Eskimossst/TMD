@@ -4,6 +4,10 @@ state={
 	manpower = 500000
 	
 	state_category = rural
+	
+	resources={
+		oil=15
+	}
 
 	history={
 		owner = IRQ

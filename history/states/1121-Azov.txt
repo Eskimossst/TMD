@@ -6,9 +6,13 @@ state={
 	
 	state_category = rural
 
+	resources={
+		steel=2
+	}
+	
 	history={
 	
-		owner = KUB
+		owner = KUB		
 		
 		victory_points = {
 			11559 1 

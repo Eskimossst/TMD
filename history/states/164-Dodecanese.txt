@@ -23,10 +23,7 @@ state=
 			}
 		}
 		add_core_of = GRE
-		1941.11.1 = {
-			owner = VAT
-			add_core_of = VAT
-		}
+		add_claim_by = TUR
 	}
 	provinces=
 	{

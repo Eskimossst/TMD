@@ -5,6 +5,10 @@ state={
 	manpower = 53429
 	
 	state_category = rural
+	
+	resources={
+		steel=2
+	}
 
 	history={
 		owner = ITA
@@ -29,9 +33,6 @@ state={
 			}			
 		}
 		add_core_of = LBA
-		1941.11.1 = {
-			owner = LBA
-		}
 	}
 
 	provinces={

@@ -1,6 +1,10 @@
 state={
 	id=274
 	name="STATE_274"
+	
+	resources={
+		rubber=3
+	}
 
 	history={
 		owner = ENG
@@ -16,10 +20,6 @@ state={
 			}
 
 		}
-		1941.11.1 = {
-			owner = HOL
-		}
-
 	}
 
 	provinces={

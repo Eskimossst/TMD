@@ -15,10 +15,6 @@ state={
 			infrastructure = 4
 		}
 		add_core_of = FRA
-		1941.11.1 = {
-			add_core_of = CAT
-			owner = CAT
-		}
 	}
 
 	provinces={

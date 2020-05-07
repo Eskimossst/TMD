@@ -16,10 +16,6 @@ state={
 			}
 		}
 		add_core_of = ITA
-		1941.11.1 = {
-			owner = SIC
-			add_core_of = SIC
-		}
 	}
 
 	provinces={

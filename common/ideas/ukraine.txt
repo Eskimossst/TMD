@@ -1,6 +1,49 @@
 ideas = {
 
 	country = {
+		
+		UKR_political_crisis_1 = {
+			picture = generic_disjointed_gov
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.2
+				fascism_drift = 0.02
+				communism_drift = 0.02
+				democratic_drift = 0.02
+			}
+		}
+		
+		UKR_political_crisis_2 = {
+			picture = usa_great_depression_3
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		
+		UKR_political_crisis_3 = {
+			picture = usa_great_depression_3
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				production_speed_buildings_factor = -0.15
+			}
+		}
+	
+	
+		##############################
+	
+	
+	
+	
 		Ukrain_great_depresion_1 = {
 			picture = usa_great_depression_3
 			allowed = {

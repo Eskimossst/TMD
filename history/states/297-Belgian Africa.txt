@@ -6,8 +6,11 @@ state=
 	
 	state_category = enclave
 	
-	history=
-	{
+	resources={
+		rubber=1
+	}
+	
+	history={
 		owner = SPR
 		add_core_of = EQG
 		victory_points = {
@@ -21,12 +24,6 @@ state=
 			8244 = {
 				naval_base = 1
 			}
-		}
-		1939.1.1 = {
-			owner = SPA
-		}
-		1941.11.1 = {
-			owner = EQG
 		}
 	}
 	provinces={

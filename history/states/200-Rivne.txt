@@ -5,6 +5,10 @@ state={
 	manpower = 1294082
 	state_category = town
 
+	resources={
+		steel=4
+	}
+
 	history={
 		owner = MKH
 		victory_points = {
@@ -12,6 +16,9 @@ state={
 		}
 		victory_points = {
 			429 5
+		}
+		victory_points = {
+			11700 1
 		}
 		buildings = {
 			infrastructure = 5

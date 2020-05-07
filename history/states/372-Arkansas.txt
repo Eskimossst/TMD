@@ -21,12 +21,6 @@ state={
 		victory_points = {
 			12489 1 
 		}
-		1941.11.1 = {
-			owner = TEX
-			add_core_of = TEX
-		}
-
-
 	}
 
 	provinces={

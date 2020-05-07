@@ -43,49 +43,8 @@ state=
 
 		}
 		add_core_of = CZE
-		add_core_of = SDT
 		victory_points = { 11432 3 }
 		victory_points = { 6470 1 }
-
-		1938.9.30 = {
-			owner = GER
-			controller = GER
-		}
-		1941.11.1 = {
-			owner = SDT
-			controller = SDT
-			buildings = {
-				infrastructure = 10
-				arms_factory = 3
-				industrial_complex = 1
-				anti_air_building = 10
-				air_base = 10
-				424 =
-				{
-					bunker = 10
-				}
-				469 =
-				{
-					bunker = 10
-				}
-				3585 =
-				{
-					bunker = 10
-				}
-				6470 =
-				{
-					bunker = 10
-				}
-				9555 =
-				{
-					bunker = 10
-				}
-				11432 =
-				{
-					bunker = 10
-				}
-			}
-		}
 	}
 	provinces=
 	{

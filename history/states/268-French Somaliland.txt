@@ -5,6 +5,10 @@ state={
 
 
 	state_category = enclave
+	
+	resources={
+		oil=1
+	}
 
 	history={
 		owner = FRA
@@ -19,12 +23,6 @@ state={
 				naval_base = 2
 			}
 		}
-		1941.11.1 = {
-			owner = VNC
-			controller = VNC
-			add_claim_by = ETH
-		}
-
 	}
 	provinces={
 		4985 8124

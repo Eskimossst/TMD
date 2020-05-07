@@ -1,6 +1,11 @@
 state={
 	id=539
 	name="STATE_539"
+	
+	resources={
+		rubber=2
+		steel=1
+	}
 
 	history={
 		owner = FRA
@@ -16,11 +21,6 @@ state={
 			}
 
 		}
-		1941.11.1 = {
-			add_core_of = COG
-			owner = PRS
-		}
-
 	}
 
 	provinces={

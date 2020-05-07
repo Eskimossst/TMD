@@ -5,15 +5,16 @@ state={
 	
 	state_category = pastoral
 	
+	resources={
+		oil=2
+	}
+	
 	history={
 		owner = ITA		
 		buildings = {
 			infrastructure = 2
 		}
 		add_core_of = LBA
-		1941.11.1 = {
-			owner = LBA
-		}
 	}
 	
 	provinces={

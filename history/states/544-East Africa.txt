@@ -6,6 +6,10 @@ state={
 	
 	state_category = rural
 	
+	resources={
+		steel=4
+	}
+	
 	history={
 		owner = POR
 		buildings = {
@@ -19,10 +23,6 @@ state={
 			8245 1 
 		}
 		add_core_of = MZB
-		1941.11.1 = {
-			owner = ZIM
-			add_core_of = ZIM
-		}
 	}
 
 	provinces={
