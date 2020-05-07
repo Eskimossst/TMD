@@ -1,0 +1,323 @@
+ideas = {
+
+	country = {
+		Ukrain_great_depresion_1 = {
+			picture = usa_great_depression_3
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		
+		Ukrain_great_depresion_2 = {
+			picture = great_depression
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		
+		Ukrain_great_depresion_3 = {
+			picture = idea_partial_economic_mobilisation
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		
+		Ukrain_great_depresion_4 = {
+		
+			picture = usa_great_depression_3
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				production_speed_buildings_factor = -0.45
+				consumer_goods_factor = 0.2
+			}
+		}
+		
+		Ukrain_great_depresion_5 = {
+			picture = idea_tot_economic_mobilisation
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		Independent_Ukrain = {
+		
+			picture = idea_hun_treaty_of_trianon
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.4
+			}
+		}
+		
+		Great_win = {
+		
+			picture = generic_victors_of_ww1
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				neutrality_drift = 0.05
+				political_power_gain = 0.5
+			}
+		}
+		
+		Dictature_Skoropadsky = {
+		
+			picture = generic_pp_unity_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		
+		Bad_times = {
+		
+			picture = usa_great_depression_3
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.3
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		Plan_Dunai = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		Defense_commun = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor	= 0.2
+			}
+		}
+		
+		Narodnaya_armia_1 = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = -0.05
+				training_time_army_factor = -0.1
+			}
+		}
+		
+		Narodnaya_armia_2_attack = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.1
+				army_attack_factor = 0.1
+				army_org_factor = -0.05
+				training_time_army_factor = -0.15
+			}
+		}
+		
+		Narodnaya_armia_2_defence = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = -0.05
+				army_defence_factor = 0.1
+				training_time_army_factor = 0.15
+			}
+		}
+		
+		Narodnaya_armia_3_defence = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = -0.025
+				training_time_army_factor = -0.15
+				army_defence_factor = 0.1
+			}
+		}
+		
+		Narodnaya_armia_3_attack = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.1
+				army_attack_factor = 0.1
+				army_org_factor = -0.025
+				training_time_army_factor = -0.15
+			}
+		}
+		
+		Defence_politic = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor	= 0.2
+				production_speed_bunker_factor = 0.2
+			}
+		}
+		
+		country_free_people = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				partisan_effect = 0.3
+				monthly_population = 0.1
+			}
+		}
+		
+		
+		Distribution_property = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		Subsiding_citizen_factories = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		Subsiding_military_factories = {
+		
+			picture = idea_generic_exploit_mines
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				consumer_goods_factor = -0.5
+			}
+		}
+		
+		mass_emigrations = {
+			picture = idea_eng_a_change_in_course
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.1
+			}
+		}
+		Privatisation_economic = {
+			picture = idea_chi_hyper_inflation2
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		Legalise_drugs = {
+			picture = idea_chi_hyper_inflation
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.01
+				consumer_goods_factor = -0.05
+			}
+		}
+		Agreement_with_bands = {
+			picture = generic_intel_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = -0.1
+				political_power_cost = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		Ukrain_corruption_1 = {
+			picture = idea_generic_deal_with_the_devil
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		Ukrain_corruption_2 = {
+			picture = idea_generic_deal_with_the_devil2
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = -0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+}

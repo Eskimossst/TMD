@@ -1,0 +1,29 @@
+state={
+	id=798
+	name="STATE_798"
+	manpower = 125100
+	
+	state_category = enclave
+	
+	history={
+		owner = POL
+		victory_points = {
+			3254 1 
+		}
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = POL
+		add_claim_by = LIT
+		1941.11.1 = {
+			owner = PRS
+			controller = PRS
+			add_core_of = PRS
+			remove_core_of = GER
+		}
+	}
+
+	provinces={
+		3254 13602
+	}
+}

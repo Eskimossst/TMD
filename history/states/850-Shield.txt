@@ -1,0 +1,25 @@
+state={
+	id=850
+	name="STATE_850"
+	manpower = 2200
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = DEN
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = DEN
+		add_core_of = GRO
+		1941.11.1 = {
+			owner = GRO
+			add_claim_by = NOR
+			add_claim_by = CAN
+		}
+	}
+
+	provinces={
+		10636 13235 13255 13266 13271 13272 13274 13275 13279 13282 13283 13284
+	}
+}

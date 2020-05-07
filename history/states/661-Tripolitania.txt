@@ -1,0 +1,22 @@
+state={
+	id=661
+	name="STATE_661"
+	manpower = 188635‬‬
+	
+	state_category = pastoral
+	
+	history={
+		owner = ITA		
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = LBA
+		1941.11.1 = {
+			owner = LBA
+		}
+	}
+	
+	provinces={
+		1174 4051 7154 10037 10067 11940
+	}
+}

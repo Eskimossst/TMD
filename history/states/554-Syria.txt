@@ -1,0 +1,35 @@
+
+state={
+	id=554
+	name="STATE_554"
+	manpower = 527797
+	
+	state_category = rural
+
+	history={
+		owner = SYR
+		victory_points = {
+			4111 3 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+		}
+		1941.11.1 = {
+			owner = SYR
+			controller = SYR
+			add_core_of = SYR
+			buildings = {
+				infrastructure = 7
+				air_base = 3
+				industrial_complex = 2
+			}
+		}
+
+	}
+
+
+	provinces={
+		1074 4111 4550 7184 13814 14183 14184 14185 14186
+	}
+}

@@ -1,0 +1,440 @@
+focus_tree = {
+	id = ukr_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+	
+	default = no
+	
+	
+	focus = {
+		id = UKR_elimination_of_disturbances #Устранение беспорядков
+		icon = GFX_goal_generic_political_pressure
+		x = 10
+		y = 0
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_elimination_of_disturbances"
+			add_stability = 0.20
+			add_manpower = -500
+		}
+	}
+	focus = {
+		id = UKR_convocation_parliament #Созыв верховной рады
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = UKR_elimination_of_disturbances }
+		relative_position_id = UKR_elimination_of_disturbances
+		x = 0
+		y = 1
+		
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        available = { has_civil_war = no }
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_convocation_parliament"
+			add_political_power = 20
+		}
+	}
+	
+	focus = {
+		id = UKR_war_regime #Военное положение
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = UKR_convocation_parliament }
+		relative_position_id = UKR_elimination_of_disturbances
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_war_regime"
+			add_manpower = 10000
+			add_stability = -0.20
+			add_political_power = -300
+		}     
+	}
+	
+	focus = {
+		id = UKR_up_Skoropadsky #Старый диктатор
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = UKR_war_regime }
+		relative_position_id = UKR_war_regime
+		mutually_exclusive = { focus = UKR_up_right_radicals }
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_up_Skoropadsky"
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.6
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+		}     
+	}
+	
+	focus = {
+		id = UKR_dictature_old_elite #Установление диктатуры «старой элиты»
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = UKR_up_Skoropadsky }
+		relative_position_id = UKR_up_Skoropadsky
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_dictature_old_elite"
+			add_stability = 0.25
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+			add_political_power = 50
+		}     
+	}
+	
+	focus = {
+		id = UKR_enemy #Подавление леворадикальных групп 
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = UKR_dictature_old_elite }
+		relative_position_id = UKR_up_Skoropadsky
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_enemy"
+			add_manpower = -10000
+			add_stability = -0.10
+			add_political_power = -50
+		}     
+	}
+	
+	focus = {
+		id = UKR_friend #План «Дунай»
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = UKR_dictature_old_elite }
+		relative_position_id = UKR_up_Skoropadsky
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_friend"
+			
+		}     
+	}
+	
+	focus = {
+		id = UKR_the_enemy_is_us_Makhno #Враг ли нам Махно?
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = UKR_enemy focus = UKR_friend }
+		relative_position_id = UKR_enemy
+		mutually_exclusive = { focus = UKR_destruction_of_the_rabble }
+		x = -1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_the_enemy_is_us_Makhno"
+			add_popularity = {
+				ideology = anarchism
+				popularity = 0.15
+			}
+		}     
+	}
+
+	focus = {
+		id = UKR_destruction_of_the_rabble #Уничтожение черни 
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = UKR_enemy focus = UKR_friend }
+		relative_position_id = UKR_enemy
+		mutually_exclusive = { focus = UKR_the_enemy_is_us_Makhno }
+		x = 3
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_destruction_of_the_rabble"
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+		}     
+	}
+	
+	focus = {
+		id = UKR_up_right_radicals #Усиление власти правых радикалов
+		icon = GFX_focus_generic_strike_at_democracy2
+		prerequisite = { focus = UKR_war_regime }
+		relative_position_id = UKR_elimination_of_disturbances
+		mutually_exclusive = { focus = UKR_up_Skoropadsky }
+		x = -2
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_up_right_radicals"
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.6
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}     
+	}
+	
+	focus = {
+		id = UKR_germany_help #Запрос помощи у Германии
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = UKR_up_right_radicals }
+		relative_position_id = UKR_up_right_radicals
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_germany_help"
+			country_event = { id = ukr.1 days = 1 }
+		}     
+	}
+	
+	focus = {
+		id = UKR_militarisation_country #Милитаризация населения
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { focus = UKR_germany_help }
+		relative_position_id = UKR_up_right_radicals
+		x = 1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_militarisation_country"
+			add_manpower = 10000
+		}     
+	}
+	
+	focus = {
+		id = UKR_iron_guardy #Железная гвардия
+		icon = GFX_goal_rhineland
+		prerequisite = { focus = UKR_germany_help }
+		relative_position_id = UKR_up_right_radicals
+		x = -1
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_iron_guardy"
+			load_oob = "UKR_elite"
+		}     
+	}
+	
+	focus = {
+		id = UKR_war_with_anarchist #Подавление анархистов
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = UKR_iron_guardy focus = UKR_militarisation_country }
+		relative_position_id = UKR_up_right_radicals
+		x = 0
+		y = 3
+		cost = 20
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus UKR_war_with_anarchist"
+			add_war_support = 0.20
+			add_state_claim = 226
+			declare_war_on = { type = annex_everything    target = MKH }
+		}     
+	}
+	
+#focus = {
+        id = UKR_end_rebellion
+        icon = GFX_goal_generic_construct_civilian
+		relative_position_id = UKR_elimination_of_disturbances
+		x = -8
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 100
+			}
+		}
+		available = {	
+			has_full_control_of_state = 226 
+			has_full_control_of_state = 200
+			has_full_control_of_state = 196
+		}
+		bypass = {
+		}
+		
+		completion_reward = {			
+			#add_timed_idea={ idea= Ukrain_great_depresion_2 days= 360}
+		}
+#}
+	
+#focus = {
+		id = UKR_input_axes
+		icon = GFX_goal_generic_construct_civilian
+		relative_position_id = UKR_end_rebellion
+		prerequisite = { focus = UKR_end_rebellion }
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 100
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		
+		completion_reward = {
+			hidden_effect = {
+				GER = { country_event = { id = ukr.5} days = 1 }
+			}
+		}
+#}
+	
+#focus = {
+		id = UKR_destroy_ussr
+		icon = GFX_goal_generic_construct_civilian
+		relative_position_id = UKR_end_rebellion
+		prerequisite = { focus = UKR_input_axes }
+		x = 0
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 100
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		
+		completion_reward = {
+			declare_war_on = { type = annex_everything    target = SOV }
+		}
+#}
+	
+#focus = {
+		id = UKR_great_ukrain
+		icon = GFX_goal_generic_construct_civilian
+		relative_position_id = UKR_end_rebellion
+		prerequisite = { focus = UKR_destroy_ussr }
+		x = 0
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 100
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		
+		completion_reward = {
+			#add_timed_idea={ idea= Ukrain_baff days= 300}
+		}
+#}
+	
+#focus = {
+		id = UKR_south_neighbours
+		icon = GFX_goal_generic_construct_civilian
+		relative_position_id = UKR_end_rebellion
+		prerequisite = { focus = UKR_great_ukrain }
+		x = 0
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 100
+			}
+		}
+		available = {
+		}
+		bypass = {
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROM
+				generator = { 78 }
+			}
+		}
+#}
+}

@@ -1,0 +1,25 @@
+state=
+{
+	id=904
+	name="STATE_904"
+	manpower = 100000
+	
+	state_category = enclave
+	
+	history =
+	{
+		owner = YUG
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = YUG
+		add_core_of = CRO
+		1941.11.1 = {
+			owner = VNC
+			add_core_of = VNC
+			remove_core_of = YUG
+		}
+	}
+	provinces={
+		13286 	}
+	}

@@ -1,0 +1,29 @@
+
+state={
+	id=907
+	name="STATE_907"
+	manpower = 50000
+	
+	state_category = enclave
+
+	history={
+		owner = YUG
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = YUG
+		1941.11.1 = {
+			owner = ALB
+			controller = ALB
+			remove_core_of = YUG
+			add_core_of = ALB
+			add_core_of = SER
+			add_claim_by = VNC
+		}
+	}
+
+	provinces={
+		13386
+	}
+}
