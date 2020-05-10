@@ -11,17 +11,15 @@ state=
 	}
 	
 	history={
-		owner = UKR
+		owner = ROM
 		buildings = {
 			infrastructure = 4
-			dockyard = 1
 			6727 = {
 				naval_base = 3
 			}
 		}
 		add_core_of = ROM
 		add_core_of = MOL
-		add_core_of = UKR
 		victory_points = {
 			6727 1
 		}

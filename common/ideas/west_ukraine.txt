@@ -1,0 +1,16 @@
+ideas = {
+
+country = {
+		
+		WUK_polynization = {
+			picture = generic_secret_police
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.20
+			}
+		}
+	}
+}
