@@ -552,7 +552,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_Moscow_opposition
-		icon = GFX_focus_fra_loyalty_trotzky
+		icon = GFX_goal_support_fourth_int
 		cost = 5
 		prerequisite = {
 			focus = UKR_Chornui_WORONOK

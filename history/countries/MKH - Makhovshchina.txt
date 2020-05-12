@@ -79,7 +79,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = anarchism_ideology
 	traits = {
-		#
+		dictator cornered_fox
 	}
 }
 
@@ -99,6 +99,16 @@ create_country_leader = {
         monarchy = 0		
 	}
 } 
+create_field_marshal = {
+	name = "Nestor Makhno"
+    portrait_path = "gfx/leaders/MKH/Nestor_Makhno.dds"
+	traits = { old_guard politically_connected media_personality brilliant_strategist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
 
 create_corps_commander = {
 	name = "Victor Belash"
@@ -114,17 +124,17 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Theodosius Sushi"
 	portrait_path = "gfx/leaders/MKH/Theodosius_Sushi.dds"
-	traits = { trickster }
+	traits = { trickster organisational_leader cavalry_expert }
 	skill = 4
-	attack_skill = 5
-	defense_skill = 1
-	planning_skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
 	logistics_skill = 3
 }
 create_corps_commander = {
     name = "Michael Omeljanovich-Pavlenko"
     portrait_path = "gfx/leaders/MKH/Michael_Omeljanovich-Pavlenko.dds"
-	traits = {  trickster cavalry_officer }
+	traits = { trickster cavalry_officer }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 2
@@ -140,4 +150,34 @@ create_corps_commander = {
 	defense_skill = 2
 	planning_skill = 3
     logistics_skill = 1 
+}
+create_corps_commander = {
+    name = "Foma Kojin"
+	portrait_path = "gfx/leaders/MKH/Foma_Kojin.dds"
+	traits = { trait_reckless cavalry_leader offensive_doctrine trickster }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3 
+}
+create_corps_commander = {
+    name = "Semyon Karetnik"
+	portrait_path = "gfx/leaders/MKH/Semyon_Karetnik.dds"
+	traits = { infantry_leader thorough_planner organizer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+    name = "Dmitry Popov" 
+	portrait_path = "gfx/leaders/MKH/Dmitry_Popov.dds"
+	traits = { trait_reckless naval_invader infantry_leader }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3 
+	planning_skill = 3
+	logistics_skill = 3
 }

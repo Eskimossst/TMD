@@ -452,7 +452,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_create_a_precedent #Создать прецедент
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = MKH_peace_to_the_cottages_war_to_the_palaces focus = MKH_execution_of_traitors }
 		relative_position_id = MKH_peace_to_the_cottages_war_to_the_palaces
 		x = 3
@@ -475,7 +475,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_industrialization #Индустриализация
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = MKH_create_a_precedent focus = MKH_from_old_to_small focus = MKH_to_rob_the_ukrainian_locomotives }
 		relative_position_id = MKH_from_old_to_small
 		mutually_exclusive = { focus = MKH_agricultural_sector  }
@@ -545,7 +545,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_the_opening_of_factories #Открытие заводов
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = MKH_industrialization }
 		relative_position_id = MKH_industrialization
 		x = 1
@@ -568,7 +568,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_attract_investors #Привлечение инвесторов
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = MKH_industry_for_the_war focus = MKH_the_opening_of_factories }
 		relative_position_id = MKH_industry_for_the_war
 		x = 0
@@ -591,7 +591,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_mobilisation_of_workers #Мобилизация рабочих
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = MKH_industry_for_the_war focus = MKH_the_opening_of_factories }
 		relative_position_id = MKH_the_opening_of_factories 
 		x = 0
@@ -773,7 +773,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_resource_exploration #Разведка ресурсов
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = MKH_land_reform focus = MKH_raise_virgin_land }
 		relative_position_id = MKH_raise_virgin_land
 		x = 2
@@ -944,7 +944,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_organization_of_science_in_zaporozhye_national_university #Организация науки в Запорожском национальном университете
-		icon = GFX_goal_generic_scientific_exchange
+		icon = GFX_focus_research
 		prerequisite = { focus = MKH_economic_boom focus = MKH_the_attempted_assassination_of_makhno focus = MKH_modern_nation }
 		relative_position_id = MKH_economic_boom
 		x = -5
