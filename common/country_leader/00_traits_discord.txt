@@ -58,4 +58,32 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	ataman = {
+		random = no
+		political_power_factor = 0.25
+        stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	dislikes_machno = {
+		random = no
+		anarchism_drift = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sailor_zheleznyak = {
+		random = no
+		production_speed_naval_base_factor = 0.15
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

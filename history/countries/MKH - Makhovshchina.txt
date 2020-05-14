@@ -2,6 +2,19 @@ capital = 200
 
 oob = "MKH_1936"
 
+set_research_slots = 3
+
+set_convoys = 50
+set_stability = 0.3
+set_war_support = 0.5
+set_fuel_ratio = 0.3
+
+
+
+add_ideas = {
+	MKH_risk_of_starvation
+}
+
 set_technology = {
 	infantry_weapons = 1
 	gwtank = 1
@@ -79,7 +92,29 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = anarchism_ideology
 	traits = {
-		dictator cornered_fox
+		ataman cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "Nikifor Grigoriev"
+	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
+	picture = "gfx/leaders/MKH/Nikifor_Grigoriev.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democracy
+	traits = {
+		ataman dislikes_machno
+	}
+}
+
+create_country_leader = {
+	name = "Anatoly Zhelyznikov"
+	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
+	picture = "gfx/leaders/MKH/Anatoly_Zhelyznikov.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {
+		sailor_zheleznyak
 	}
 }
 
