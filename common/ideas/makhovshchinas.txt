@@ -111,4 +111,24 @@ ideas = {
 			}
 		}
 	}
+	
+	political_advisor = {
+	
+		mikhail_kalinin = {
+			
+			
+			allowed = {
+				original_tag = "MKH"
+			}
+			available = 
+			{
+				NOT = { has_country_flag = purged_kalinin }
+				NOT = { has_country_flag = counter_purge }
+			}
+			
+
+			
+			traits = { popular_figurehead }
+		}
+	}
 }

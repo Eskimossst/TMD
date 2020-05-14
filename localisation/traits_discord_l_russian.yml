@@ -1,4 +1,8 @@
 ﻿l_russian:
+ oligarch_defens:0 "§YОлигарх§!\nМинистр обороны"
+ oligarch_economist:0 "§YОлигарх§!\nЭкономист"
+ oligarch_railroad_owner:0 "§YОлигарх§!\nВладелец У.Ж.Д."
+ doctor:0 "Врач эпидемиолог"
  father_of_republic:0 "Отец Республики"
  Minister_of_Economics:0 "Министр Экономики"
  Militarist:0 "Милитарист"

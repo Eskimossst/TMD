@@ -14,6 +14,7 @@ set_fuel_ratio = 0.3
 add_ideas = {
 	UKR_political_crisis_1
 	UKR_oligarchism
+	UKR_Language_question
 }
 
 # Starting tech
@@ -99,7 +100,7 @@ create_country_leader = {
 	picture = "gfx/leaders/UKR/Nikita_Sergeyevich_Khrushchev.dds"
 	expire = "1953.3.1"
 	ideology = stalinism
-	traits = {	}
+	traits = { Illiterate_leader_1	}
 }
 
 create_country_leader = {
@@ -132,12 +133,13 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Pavlo Skoropadsky"
 		picture = "Pavlo_Skoropadsky.dds"
-	traits = { old_guard politically_connected inflexible_strategist }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	traits = { old_guard media_personality cavalry_officer }
+	skill = 4
+	
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -145,6 +147,7 @@ create_corps_commander = {
 		picture = "Osip_Mikitka.dds"
 	traits = {  }
 	skill = 1 
+	
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
@@ -156,6 +159,7 @@ create_corps_commander = {
 		picture = "Miron_Tarnawski.dds"
 	traits = {  }
 	skill = 1 
+	
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 1
@@ -167,8 +171,21 @@ create_corps_commander = {
 		picture = "Anton_Kravs.dds"
 	traits = {  }
 	skill = 1 
+	
 	attack_skill = 1
 	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Sergey Delvig"
+		picture = "Sergey_Delvig.dds"
+	traits = { cavalry_officer  }
+	skill = 2
+	
+	attack_skill = 1
+	defense_skill = 2
 	planning_skill = 1
 	logistics_skill = 1
 }
