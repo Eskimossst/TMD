@@ -11,3 +11,8 @@
  ataman:0 "Атаман"
  dislikes_machno:0 "Не любит Махно"
  sailor_zheleznyak:0 "Матрос Железняк"
+ common_soldier:0 "§YАнархист§!\nПростой солдат"
+ peasant:0 "§YАнархист§!\nКрестьянин"
+ defense:0 "§YАнархист§!\nОборона"
+ work_horses:0 "§YАнархист§!\nРабочая лошадка"
+ experienced_officer:0 "§YКоммунист§!\nОпытный офицер"

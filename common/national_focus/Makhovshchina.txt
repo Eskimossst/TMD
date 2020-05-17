@@ -1737,7 +1737,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = MKH_production_of_the_latest_artillery focus = MKH_counter-protection  }
 		relative_position_id = MKH_production_of_the_latest_artillery
-		mutually_exclusive = { focus = MKH_request_specialists_from_krupp_military_factories }
+		mutually_exclusive = { focus = MKH_request_specialists_from_man_military_factories }
 		x = 0
 		y = 1
 		cost = 10
@@ -1763,7 +1763,7 @@ focus_tree = {
     }
 	
     focus = {
-		id = MKH_request_specialists_from_krupp_military_factories #Запросить специалистов из военных заводов "Krupp"
+		id = MKH_request_specialists_from_man_military_factories #Запросить специалистов из военных заводов "MAN"
 		icon = GFX_goal_unknown
 		prerequisite = { focus = MKH_production_of_the_latest_artillery focus = MKH_counter-protection  }
 		relative_position_id = MKH_counter-protection
@@ -1781,7 +1781,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_request_specialists_from_krupp_military_factories"
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_request_specialists_from_man_military_factories"
 		    add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1
@@ -1795,7 +1795,7 @@ focus_tree = {
 	focus = {
 		id = MKH_to_steal_the_experimental_equipment #Выкрасть экспериментальное оборудование 
 		icon = GFX_goal_unknown
-		prerequisite = { focus = MKH_request_specialists_from_the_kharkiv_tank_factory focus = MKH_request_specialists_from_krupp_military_factories }
+		prerequisite = { focus = MKH_request_specialists_from_the_kharkiv_tank_factory focus = MKH_request_specialists_from_man_military_factories }
 		relative_position_id = MKH_request_specialists_from_the_kharkiv_tank_factory
 		x = -1
 		y = 1
@@ -1818,7 +1818,7 @@ focus_tree = {
 	focus = {
 		id = MKH_construction_of_a_nuclear_reactor #Строительство Ядерного реактора 
 		icon = GFX_goal_unknown
-		prerequisite = { focus = MKH_request_specialists_from_the_kharkiv_tank_factory focus = MKH_request_specialists_from_krupp_military_factories }
+		prerequisite = { focus = MKH_request_specialists_from_the_kharkiv_tank_factory focus = MKH_request_specialists_from_man_military_factories }
 		relative_position_id = MKH_request_specialists_from_the_kharkiv_tank_factory
 		x = 1
 		y = 1
@@ -1841,8 +1841,8 @@ focus_tree = {
 	focus = {
 		id = MKH_protecting_the_nation #Защита нации
 		icon = GFX_goal_unknown
-		prerequisite = { focus = MKH_request_specialists_from_the_kharkiv_tank_factory focus = MKH_request_specialists_from_krupp_military_factories }
-		relative_position_id = MKH_request_specialists_from_krupp_military_factories
+		prerequisite = { focus = MKH_request_specialists_from_the_kharkiv_tank_factory focus = MKH_request_specialists_from_man_military_factories }
+		relative_position_id = MKH_request_specialists_from_man_military_factories
 		x = 1
 		y = 1
 		cost = 10

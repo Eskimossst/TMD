@@ -4499,4 +4499,29 @@ spriteTypes = {
 		name = "GFX_idea_risk_of_starvation"
 		texturefile = "gfx/interface/ideas/risk_of_starvation.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_emelyan_makhno"
+		texturefile = "gfx/interface/ideas/emelyan_makhno.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_polikarp_makhno"
+		texturefile = "gfx/interface/ideas/polikarp_makhno.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_victor_belash"
+		texturefile = "gfx/interface/ideas/victor_belash.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_maria_nikiforova"
+		texturefile = "gfx/interface/ideas/maria_nikiforova.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_alexandrovich_shchors"
+		texturefile = "gfx/interface/ideas/alexandrovich_shchors.dds"
+	}
 }
