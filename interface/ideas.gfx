@@ -4521,6 +4521,11 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_general_maria_nikiforova"
+		texturefile = "gfx/interface/ideas/general_maria_nikiforova.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_alexandrovich_shchors"
 		texturefile = "gfx/interface/ideas/alexandrovich_shchors.dds"
 	}

@@ -183,4 +183,43 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	experienced_partisan{
+	    random = no
+	    max_planning = 0.25
+	    enemy_partisan_effect = -0.1
+	    defence = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ataman = {
+		random = no
+		political_power_factor = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	dislikes_machno{
+	    random = no
+	    anarchism_drift = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sailor_zheleznyak{
+	    random = no
+	    communism_drift = 0.1
+		invasion_preparation = -0.3
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

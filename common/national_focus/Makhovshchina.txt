@@ -1283,6 +1283,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_women_in_command"
+			custom_effect_tooltip = MKH_women_in_command_tt
 		    create_corps_commander = {
 	            name = "Marusya Nikiforova"
 	            portrait_path = "gfx/leaders/MKH/Marusya_Nikiforova.dds"

@@ -210,6 +210,21 @@ ideas = {
 				factor = 1
 			}
 		}
+		
+		maria_nikiforova = {
+		
+			picture = general_maria_nikiforova
+			
+			allowed = {
+				original_tag = "MKH"
+			}
+			available = {
+			    has_completed_focus = MKH_women_in_command
+			    has_government = anarchism
+			}
+		
+			traits = { experienced_partisan }
+		}
 	}
 	
 	tank_manufacturer = {
