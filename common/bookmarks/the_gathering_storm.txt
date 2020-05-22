@@ -114,6 +114,7 @@ bookmarks = {
 			ideology = anarchism
 			ideas = {
 				MKH_risk_of_starvation
+				MKH_the_problem_of_equipment_production
 			}	
 			focuses = {
 				MKH_the_strengthening_of_the_power_of_makhno

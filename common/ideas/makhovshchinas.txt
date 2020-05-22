@@ -13,6 +13,20 @@ ideas = {
 				
 			}
         }
+		MKH_the_problem_of_equipment_production = { 
+            picture = FRA_factory_strikes 
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				training_time_factor = 0.1
+				production_speed_buildings_factor = -0.1
+			}
+        }
 	    MKH_formation_of_the_economy_1 = { 
             picture = generic_goods_red_bonus 
             removal_cost = -1 
@@ -49,6 +63,20 @@ ideas = {
 				training_time_army_factor = -0.1
 				army_org = 5
 				recon_factor = 0.05
+			}
+        }
+		MKH_reform_army = { 
+            picture = reform_army
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+			    minimum_training_level = -0.1
+				experience_gain_army = 0.05
+				experience_loss_factor = -0.1
 			}
         }
 		MKH_technology_mine_trawling = {
@@ -276,6 +304,34 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
+			}
+		}
+	}
+	
+	materiel_manufacturer = {
+	
+		designer = yes
+		
+		zaporozhye_machine-building_design = {
+			
+			picture = generic_motorized_equipment_manufacturer_3
+			
+			allowed = {
+				original_tag = MKH
+			}
+			
+			available = {
+				has_completed_focus = MKH_open_zaporozhye_machine-building_design
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+				mot_rockets = 0.50
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
 			}
 		}
 	}

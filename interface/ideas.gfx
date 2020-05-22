@@ -4529,4 +4529,9 @@ spriteTypes = {
 		name = "GFX_idea_alexandrovich_shchors"
 		texturefile = "gfx/interface/ideas/alexandrovich_shchors.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_reform_army"
+		texturefile = "gfx/interface/ideas/reform_army.dds"
+	}
 }

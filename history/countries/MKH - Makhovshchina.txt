@@ -6,13 +6,14 @@ set_research_slots = 3
 
 set_convoys = 50
 set_stability = 0.3
-set_war_support = 0.5
+set_war_support = 0.35
 set_fuel_ratio = 0.3
 
 
 
 add_ideas = {
 	MKH_risk_of_starvation
+	MKH_the_problem_of_equipment_production
 }
 
 set_technology = {
