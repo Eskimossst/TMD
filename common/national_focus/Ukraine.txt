@@ -1510,7 +1510,7 @@ focus_tree = {
 			if = {
 				limit = { has_idea = UKR_Heavy_war_industry_1 }			
 				add_ideas = {
-					add_idea = UKR_Military_production_2
+					add_ideas = UKR_Military_production_2
 				}
 			}
 			else = {

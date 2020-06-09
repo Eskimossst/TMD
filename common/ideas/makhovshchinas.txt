@@ -27,6 +27,45 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 			}
         }
+		MKH_old_to_small = { 
+            picture = spa_la_division_azul
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				conscription = 0.03
+				training_time_factor = 0.05
+			}
+        }	
+		MKH_modern_production = { 
+            picture = man_five_year_plan_industry 
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+        }
+		MKH_organization_of_scientists = { 
+            picture = JAP_supremacy_of_technology
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				research_speed_factor = 0.15
+			}
+        }
 	    MKH_formation_of_the_economy_1 = { 
             picture = generic_goods_red_bonus 
             removal_cost = -1 
@@ -48,9 +87,22 @@ ideas = {
 			}
 			
 			modifier = {
-				conscription = 0.05
+				conscription = 0.025
+				drift_defence_factor = 0.25
+				foreign_subversive_activites = -0.25
+				send_volunteers_tension = -0.25
+				join_faction_tension = -0.25
 			}
         }
+		MKH_anarchism_of_the_world = {
+			picture = spr_anarchist_society
+			allowed = {
+			}
+			removal_cost = -1
+			modifier = {
+				anarchism_drift = 0.10
+			}
+		}
 		MKH_pavlogradskaya_military_academy = { 
             picture = military_academy 
             removal_cost = -1 
@@ -169,13 +221,27 @@ ideas = {
 		
 			traits = { peasant }
 		}
+		
+		vsevolod_volin = {
+		
+			picture = vsevolod_volin
+			
+			allowed = {
+				original_tag = "MKH"
+			}
+			available = {
+			    has_government = anarchism
+			}
+		
+			traits = { publicist }
+		}
 	}
 	
 	army_chief = {
 		
 		victor_belash = {
 		
-		    picture = 
+		    picture = victor_belash
 			
 			allowed = {
 				original_tag = MKH
@@ -184,7 +250,26 @@ ideas = {
 			    has_government = anarchism
 			}
 			
-			traits = { defense }
+			traits = { defence_anarchist } 
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		general_ivan_markov = {
+		
+		    picture = ivan_markov
+			
+			allowed = {
+				original_tag = MKH
+			}
+			available = {
+			    has_completed_focus = MKH_new_command
+			    has_government = anarchism
+			}
+			
+			traits = { military_training } 
 			
 			ai_will_do = {
 				factor = 1
@@ -239,7 +324,7 @@ ideas = {
 			}
 		}
 		
-		maria_nikiforova = {
+		general_maria_nikiforova = {
 		
 			picture = general_maria_nikiforova
 			
@@ -252,6 +337,29 @@ ideas = {
 			}
 		
 			traits = { experienced_partisan }
+		}
+		
+		ivan_markov = {
+			ledger = army
+			
+			picture = ivan_markov
+			
+			allowed = {
+				original_tag = MKH
+			}
+			available = {
+			    has_completed_focus = MKH_new_command
+			    has_government = anarchism
+			}
+			
+			traits = { ataman_army }
+			
+			modifier = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
 		}
 	}
 	
@@ -284,7 +392,7 @@ ideas = {
 			}
 		}
 		
-		GER_MAN = {
+		MAN = {
 
 			picture = GER_MAN
 			
@@ -304,6 +412,36 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+		
+		designer = yes
+		
+		dnepropetrovsk_aircraft_repair = {
+		    
+			picture = generic_air_manufacturer_1
+			
+			
+			allowed = {
+				original_tag = MKH
+			}
+			
+			available = {
+				has_completed_focus = MKH_to_open_the_dnepropetrovsk_aircraft_repair_plant
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			  experience_gain_air_factor = 0.1
+			  industry_repair_factor = 0.1
 			}
 		}
 	}
@@ -333,6 +471,26 @@ ideas = {
 			
 			modifier = {
 			}
+		}
+	}
+	
+	theorist = {	
+		
+		general_vsevolod_volin = {
+		
+		    picture = vsevolod_volin
+		
+			ledger = army
+			
+			allowed = {
+				original_tag = MKH
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist_anarchism }
 		}
 	}
 }

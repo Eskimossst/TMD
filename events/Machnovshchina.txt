@@ -1,0 +1,38 @@
+add_namespace = mkh
+
+
+country_event = {
+	id = mkh.1
+	title = mkh.1.t
+	desc = mkh.1.d
+	picture = GFX_report_event_fighters
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = mkh.1.a
+		GER = { country_event = { id = mkh.2 days = 1 } }
+	}
+}
+country_event = {
+	id = mkh.2
+	title = mkh.2.t
+	desc = mkh.2.d
+	picture = GFX_report_event_fighters
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = mkh.2.a
+		
+	}
+	
+	option = {
+		name = reh.2.b
+		
+	}
+}

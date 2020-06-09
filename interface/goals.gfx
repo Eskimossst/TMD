@@ -1954,10 +1954,12 @@ spriteTypes = {
 		name = "GFX_focus_por_concordat"
 		texturefile = "gfx/interface/goals/focus_por_concordat.dds"
 	}
+	
 	##################################################################
+	
 	SpriteType = { 
-		name = "GFX_the_strengthening_of_the_power_of_makhno"
-		texturefile = "gfx/interface/goals/the_strengthening_of_the_power_of_makhno.dds"
+		name = "GFX_father_makhno"
+		texturefile = "gfx/interface/goals/father_makhno.dds"
 	}
 	
 	SpriteType = { 
@@ -1966,33 +1968,28 @@ spriteTypes = {
 	}
 	
 	SpriteType = { 
-		name = "GFX_collect_cartridges_for_a_rainy_day"
-		texturefile = "gfx/interface/goals/collect_cartridges_for_a_rainy_day.dds"
-	}
-	
-	SpriteType = { 
 		name = "GFX_execution_of_traitors"
 		texturefile = "gfx/interface/goals/execution_of_traitors.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_to_rob_the_ukrainian_locomotives"
-		texturefile = "gfx/interface/goals/to_rob_the_ukrainian_locomotives.dds"
+		name = "GFX_to_rob_locomotives"
+		texturefile = "gfx/interface/goals/to_rob_locomotives.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_deal_with_jews_in_novo-kovno"
-		texturefile = "gfx/interface/goals/deal_with_jews_in_novo-kovno.dds"
+		name = "GFX_generic_deal_with_jews"
+		texturefile = "gfx/interface/goals/generic_deal_with_jews.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_the_capital_of_anarchy"
+		name = "GFX_capital_of_anarchy"
 		texturefile = "gfx/interface/goals/the_capital_of_anarchy.dds"
 	}
 	
 	SpriteType = { 
-		name = "GFX_land_reform"
-		texturefile = "gfx/interface/goals/land_reform.dds"
+		name = "GFX_generic_land_reform"
+		texturefile = "gfx/interface/goals/generic_land_reform.dds"
 	}
 	
 	SpriteType = { 
@@ -2001,13 +1998,8 @@ spriteTypes = {
 	}
 	
 	SpriteType = { 
-		name = "GFX_science"
-		texturefile = "gfx/interface/goals/science.dds"
-	}
-	
-	SpriteType = { 
-		name = "GFX_the_formation_of_the_communes_in_the_crimea"
-		texturefile = "gfx/interface/goals/the_formation_of_the_communes_in_the_crimea.dds"
+		name = "GFX_anarchy_crimea"
+		texturefile = "gfx/interface/goals/anarchy_crimea.dds"
 	}
 	
 	SpriteType = { 
@@ -2049,4 +2041,15 @@ spriteTypes = {
 		name = "GFX_synthetic_fuel"
 		texturefile = "gfx/interface/goals/synthetic_fuel.dds"
 	}
+	
+	SpriteType = { 
+		name = "GFX_crushed_nation_rus"
+		texturefile = "gfx/interface/goals/crushed_nation_rus.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_capital_of_anarchy"
+		texturefile = "gfx/interface/goals/capital_of_anarchy.dds"
+	}
+	
 }

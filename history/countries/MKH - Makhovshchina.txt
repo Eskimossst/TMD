@@ -79,11 +79,11 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 0
+	neutrality = 10
 	fascism = 0
 	communism = 10
 	democratic = 0
-	anarchism = 90 
+	anarchism = 80 
 }
 
 create_country_leader = {
@@ -129,9 +129,9 @@ create_country_leader = {
 	set_popularities = {
 		fascism = 0
 		communism = 10
-		neutrality = 0
+		neutrality = 10
 		democratic = 0 
-		anarchism = 90
+		anarchism = 80
         monarchy = 0		
 	}
 } 

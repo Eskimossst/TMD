@@ -91,7 +91,7 @@ bookmarks = {
 			focuses = {
 				MKH_the_strengthening_of_the_power_of_makhno
 				MKH_collect_cartridges_for_a_rainy_day
-				MKH_launch_the_cruiser_aurora
+				MKH_launch_the_battleship_sevastopol
 			}			
 		}
 		SOV = {

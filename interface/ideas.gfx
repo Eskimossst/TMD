@@ -4534,4 +4534,30 @@ spriteTypes = {
 		name = "GFX_idea_reform_army"
 		texturefile = "gfx/interface/ideas/reform_army.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_vsevolod_volin"
+		texturefile = "gfx/interface/ideas/vsevolod_volin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_general_vsevolod_volin"
+		texturefile = "gfx/interface/ideas/general_vsevolod_volin.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ivan_markov"
+		texturefile = "gfx/interface/ideas/ivan_markov.dds"
+	} 
+	
+	spriteType = {
+		name = "GFX_idea_aaron_baron"
+		texturefile = "gfx/interface/ideas/aaron_baron.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_book_with_knife"
+		texturefile = "gfx/interface/ideas/book_with_knife.dds" 
+	}
+
 }
