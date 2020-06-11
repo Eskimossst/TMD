@@ -1,0 +1,188 @@
+train_robbery_category = {
+	prepair_robbery = {
+		icon = 1111
+		available = {
+			NOT = {
+				has_country_flag = robbery_preparation_complete
+			}
+			has_equipment = {
+				support_equipment > 49
+			}
+		}
+		visible = {
+			has_completed_focus = MKH_to_rob_the_ukrainian_locomotives
+		}
+		cost = 10
+		days_remove = 15
+		ai_will_do = {
+			factor = 999
+		}
+		remove_effect = {
+			set_country_flag = robbery_preparation_complete
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -50
+			}
+		}
+	}
+	rob_train_kharkov = {
+		icon = 1111
+		available = {
+			has_country_flag = robbery_preparation_complete
+		}
+		visible = {
+			has_completed_focus = MKH_to_rob_the_ukrainian_locomotives
+		}
+		cost = 30
+		days_remove = 25
+		remove_effect = {
+			random_list = {
+				90 = {
+					country_event = {
+						id = mkh.2
+						days = 1
+					}
+				}
+				10 = {
+					country_event = {
+						id = mkh.3
+						days = 1
+					}
+				}
+			}
+			clr_country_flag = robbery_preparation_complete
+		}
+	}
+	rob_train_mariupol = {
+		icon = 1111
+		available = {
+			has_country_flag = robbery_preparation_complete
+		}
+		visible = {
+			has_completed_focus = MKH_to_rob_the_ukrainian_locomotives
+		}
+		cost = 30
+		days_remove = 25
+		remove_effect = {
+			random_list = {
+				90 = {
+					country_event = {
+						id = mkh.2
+						days = 1
+					}
+				}
+				10 = {
+					country_event = {
+						id = mkh.3
+						days = 1
+					}
+				}
+			}
+			clr_country_flag = robbery_preparation_complete
+		}
+	}
+	rob_train_sevastopol = {
+		icon = 1111
+		available = {
+			has_country_flag = robbery_preparation_complete
+		}
+		visible = {
+			has_completed_focus = MKH_to_rob_the_ukrainian_locomotives
+		}
+		cost = 30
+		days_remove = 25
+		remove_effect = {
+			random_list = {
+				90 = {
+					country_event = {
+						id = mkh.2
+						days = 1
+					}
+				}
+				10 = {
+					country_event = {
+						id = mkh.3
+						days = 1
+					}
+				}
+			}
+			clr_country_flag = robbery_preparation_complete
+		}
+	}
+}
+resources_research_category = {
+	steel_dnepr = {
+		icon = 1111
+		available = {
+			has_completed_focus = MKH_resource_exploration
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		visible = {
+			has_completed_focus = MKH_resource_exploration
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			226 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+			}
+		}
+	}
+	tungsten_dnepr = {
+		icon = 1111
+		available = {
+			has_completed_focus = MKH_resource_exploration
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		visible = {
+			has_completed_focus = MKH_resource_exploration
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			226 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+		}
+	}
+	oil_herson = {
+		icon = 1111
+		available = {
+			has_completed_focus = MKH_resource_exploration
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		visible = {
+			has_completed_focus = MKH_resource_exploration
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 25
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			196 = {
+				add_resource = {
+					type = oil
+					amount = 6
+				}
+			}
+		}
+	}
+		
+		
+		

@@ -4559,5 +4559,20 @@ spriteTypes = {
 		name = "GFX_idea_book_with_knife"
 		texturefile = "gfx/interface/ideas/book_with_knife.dds" 
 	}
+	
+	spriteType = {
+		name = "GFX_idea_industrialization"
+		texturefile = "gfx/interface/ideas/industrialization.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_agrarian_reform"
+		texturefile = "gfx/interface/ideas/agrarian_reform.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ilya_struk"
+		texturefile = "gfx/interface/ideas/ilya_struk.dds"
+	} 
 
 }

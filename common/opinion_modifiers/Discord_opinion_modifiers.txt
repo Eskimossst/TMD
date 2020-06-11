@@ -1,4 +1,6 @@
 opinion_modifiers = {
 
-	
+	#MKH
+	MKH_robbed_a_train = { value = -20 }
+	MKH_tried_rob_a_train = { value = -15 }
 }

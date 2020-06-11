@@ -1126,13 +1126,13 @@ focus_tree = {
 			}
 			create_country_leader = {
 				name = "Danylo Skoropadskyi"
-					desc = ""
-					picture = "gfx/leaders/UKR/Danylo_Skoropadskyi.dds"
-					expire = "1953.3.1"
-					ideology = monarchy_ideology
-					traits = {
-					}
+				desc = ""
+				picture = "gfx/leaders/UKR/Danylo_Skoropadskyi.dds"
+				expire = "1953.3.1"
+				ideology = monarchy_ideology
+				traits = {
 				}
+			}
 			set_politics = {
 				ruling_party = communism
 				elections_allowed = no
@@ -1509,9 +1509,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = { has_idea = UKR_Heavy_war_industry_1 }			
-				add_ideas = {
-					add_ideas = UKR_Military_production_2
-				}
+				add_ideas = UKR_Military_production_2
 			}
 			else = {
 				add_ideas = UKR_Military_production_1

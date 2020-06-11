@@ -1,0 +1,12 @@
+train_robbery_category = {
+	icon = generic_formable_nations
+	allowed = {
+		has_dlc = "Waking the Tiger"
+	}
+}
+resources_research_category = {
+	icon = generic_formable_nations
+	allowed = {
+		has_dlc = "Waking the Tiger"
+	}
+}

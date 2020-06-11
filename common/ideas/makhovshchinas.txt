@@ -10,7 +10,6 @@ ideas = {
 			}
 			
 			modifier = {
-				
 			}
         }
 		MKH_the_problem_of_equipment_production = { 
@@ -190,6 +189,132 @@ ideas = {
 				navy_screen_defence_factor = 0.05
 			}
 		}
+		MKH_industrialization_start = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = industrialization
+			modifier = {
+			    production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = -0.10
+			}
+		}
+		MKH_attract_the_investors = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				trade_cost_for_target_factor = -0.5
+				trade_opinion_factor = 0.10
+			    political_power_gain = 0.15
+			}
+		}
+		MKH_industrialization_continuation = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = industrialization
+			modifier = {
+			    production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				land_reinforce_rate = 0.05
+				consumer_goods_factor = 0.10
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		MKH_the_modern_nation = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = industrialization
+			modifier = {
+			    production_speed_arms_factory_factor = 0.20
+				production_speed_industrial_complex_factor = 0.20
+				land_reinforce_rate = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		MKH_agricultural_sector_start = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = agrarian_reform
+			modifier = {
+			    production_speed_industrial_complex_factor = 0.20
+			    production_speed_arms_factory_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		MKH_agricultural_sector_continuation = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = agrarian_reform
+			modifier = {
+			    production_speed_industrial_complex_factor = 0.20
+			    production_speed_arms_factory_factor = 0.10
+				production_speed_infrastructure_factor = 0.15
+				consumer_goods_factor = -0.10
+			}
+		}
+		MKH_the_economic_boom = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = agrarian_reform
+			modifier = {
+			    production_speed_industrial_complex_factor = 0.25
+			    production_speed_arms_factory_factor = 0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		MKH_the_political_arrests = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_purge
+			modifier = {
+			    war_support_factor = -0.15
+				political_power_gain = -0.10
+				anarchism_drift = -0.05
+			}
+		}  
 	}
 	
 	political_advisor = {
@@ -231,9 +356,24 @@ ideas = {
 			}
 			available = {
 			    has_government = anarchism
+				has_completed_focus = MKH_deal_with_jews_in_novo-kovno
 			}
 		
 			traits = { publicist }
+		}
+		
+		ilya_struk = {
+		
+			picture = ilya_struk
+			
+			allowed = {
+				original_tag = "MKH"
+			}
+			available = {
+			    has_government = neutrality
+			}
+		
+			traits = { colonel_neutraliry }
 		}
 	}
 	
@@ -353,6 +493,29 @@ ideas = {
 			}
 			
 			traits = { ataman_army }
+			
+			modifier = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		aaron_baron = {
+			ledger = army
+			
+			picture = aaron_baron
+			
+			allowed = {
+				original_tag = MKH
+			}
+			available = {
+			    has_completed_focus = MKH_new_command
+			    has_government = anarchism
+			}
+			
+			traits = { field }
 			
 			modifier = {
 			}
@@ -484,6 +647,11 @@ ideas = {
 			
 			allowed = {
 				original_tag = MKH
+			}
+			
+			available = {
+			    has_government = anarchism
+				has_completed_focus = MKH_deal_with_jews_in_novo-kovno
 			}
 			
 			research_bonus = {

@@ -267,4 +267,24 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	field = {
+		random = no
+		army_morale_factor = 0.1
+		experience_loss_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	colonel_neutraliry = {
+		random = no
+		recon_factor = 0.05
+		army_org_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
