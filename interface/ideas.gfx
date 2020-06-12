@@ -4573,6 +4573,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ilya_struk"
 		texturefile = "gfx/interface/ideas/ilya_struk.dds"
-	} 
+	}
+
+    spriteType = {
+		name = "GFX_idea_marine_army"
+		texturefile = "gfx/interface/ideas/marine_army.dds" 
+	}
 
 }

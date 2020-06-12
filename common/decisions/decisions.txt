@@ -183,6 +183,118 @@ resources_research_category = {
 			}
 		}
 	}
+}
+ukr_anarchy_support_category = {
+	ukr_people = {
+		icon = 1111
+		available = {
+			has_completed_focus = MKH_organize_a_workers_strike
+		}
+		visible = {
+			has_completed_focus = MKH_organize_a_workers_strike
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 50
+		targeted_modifier = {
+			tag = UKR
+			anarchism_drift = 0.15
+		}
+		modifier = {
+			political_power_gain = -0.5
+		}
+	}
+	ukr_government = {
+		icon = 1111
+		available = {
+			has_completed_focus = MKH_organize_a_workers_strike
+		}
+		visible = {
+			has_completed_focus = MKH_organize_a_workers_strike
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 50
+		targeted_modifier = {
+			tag = UKR
+			stability_weekly = -0.25
+		}
+		modifier = {
+			political_power_gain = -1
+		}
+	}
+	ukr_anarcho_coup = {
+		icon = 111
+		available = {
+			has_completed_focus = MKH_organize_a_workers_strike
+			UKR = {
+				anarchism > 0.45
+			}
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 150
+		remove_effect = {
+			UKR = {
+				start_civil_war = {
+					ideology = anarchism
+					size = highest_party_ideology@exclude_ruling_party
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = ukr_anarcho_war
+		}
+	}
+}
+
+# Харьков 221 903
+# Донетчина 227 200
+# Луганщина 228 221 227
+# ростов 218 227 228
+ukr_border_war_category = {
+	kharkov_border_war = {
+		icon = 111
+		allowed = {
+			original_tag = MKH
+		}
+		visible = {
+			always = yes
+		}
+		available = {
+			221 = {
+				any_neighbor_state = {
+					is_controlled_by = MKH
+				}
+			}
+			divisions_in_border_state = {
+				state = 903
+				border_state = 221
+				size > 0
+			}
+		}
+		cost = 30
+		days_remove = 30
+		remove_effect = {
+			start_border_war = {
+				change_state_after_war = yes
+				attacker = {
+					state = 903
+					num_provinces = 4
+					on_win = mkh.6
+					on_lose = mkh.7
+				}
+				defender = {
+					state = 221
+					num_provinces = 4
+					on_win = mkh.7
+					on_lose = mkh.6
+				}
+			}
+		}
+	}
+					
+			
 		
 		
 		

@@ -65,7 +65,7 @@ ideas = {
 				research_speed_factor = 0.15
 			}
         }
-	    MKH_formation_of_the_economy_1 = { 
+	    MKH_formation_the_economy = { 
             picture = generic_goods_red_bonus 
             removal_cost = -1 
 			allowed = { always = no }
@@ -314,7 +314,22 @@ ideas = {
 				political_power_gain = -0.10
 				anarchism_drift = -0.05
 			}
-		}  
+		}
+       	MKH_reformation_of_the_council = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_flexible_foreign_policy
+			modifier = {
+				political_power_gain = 0.15
+				trade_opinion_factor = 0.15
+				enemy_justify_war_goal_time = 0.15
+			}
+		}
 	}
 	
 	political_advisor = {

@@ -105,3 +105,61 @@ country_event = {
 		add_manpower = 10000
 	}
 }
+country_event = {
+	id = mkh.5
+	title = mkh.5.t
+	desc = mkh.5.d
+	picture = GFX_report_event_generic_factory
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = mkh.5.a
+		add_political_power = 50
+		add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 100
+            producer = MKH
+        }
+		add_equipment_to_stockpile = {
+            type = light_air
+            amount = 5
+            producer = MKH
+        }
+	}
+}
+country_event = {
+	id = mkh.6 #Great
+	title = mkh.6.t
+	desc = mkh.6.d
+	picture = GFX_report_event_generic_factory
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = mkh.6.a
+		
+	}
+}
+country_event = {
+	id = mkh.7 #Fail
+	title = mkh.7.t
+	desc = mkh.7.d
+	picture = GFX_report_event_generic_factory
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = mkh.7.a
+		
+	}
+}

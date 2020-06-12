@@ -349,7 +349,7 @@ focus_tree = {
 		relative_position_id = MKH_collect_cartridges_for_a_rainy_day
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -373,7 +373,7 @@ focus_tree = {
 		relative_position_id = MKH_collect_cartridges_for_a_rainy_day
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -409,7 +409,7 @@ focus_tree = {
 		relative_position_id = MKH_peace_to_the_cottages_war_to_the_palaces
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -432,7 +432,7 @@ focus_tree = {
 		relative_position_id = MKH_peace_to_the_cottages_war_to_the_palaces
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -455,7 +455,7 @@ focus_tree = {
 		relative_position_id = MKH_peace_to_the_cottages_war_to_the_palaces
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -467,7 +467,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_create_a_precedent"
-		    
+		    unlock_decision_category_tooltip = ukr_border_war_category
 	    }
     }
 	
@@ -844,7 +844,7 @@ focus_tree = {
 		relative_position_id = MKH_to_rob_the_ukrainian_locomotives
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -869,7 +869,7 @@ focus_tree = {
 		relative_position_id = MKH_overcoming_hunger
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -896,7 +896,7 @@ focus_tree = {
 		relative_position_id = MKH_political_arrests
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -935,7 +935,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_the_capital_of_anarchy"
-		    random_state = {			
+		    200 = {			
 			    limit = {
 					is_owned_and_controlled_by = ROOT
 					is_capital = yes
@@ -945,6 +945,17 @@ focus_tree = {
 					level = 5
 					instant_build = yes 
 				}
+				add_building_construction = { 
+					type = radar_station
+					level = 3
+					instant_build = yes 
+				}
+				add_building_construction = { 
+					type = arms_factory
+					level = 3
+					instant_build = yes 
+				}
+				add_extra_state_shared_building_slots = 3
 		    }
 	    }
     }
@@ -968,12 +979,12 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_formation_of_the_economy"
-		    add_ideas = MKH_formation_of_the_economy_1
+		    add_ideas = MKH_formation_the_economy
 	    }
     }
 	
 	focus = {
-		id = MKH_organization_of_science_in_zaporozhye_national_university #Организация науки в Запорожском национальном университете
+		id = MKH_organization_of_science_in_zaporozhye_national_university #Организация Запорожского университета
 		icon = GFX_focus_research
 		prerequisite = { focus = MKH_economic_boom focus = MKH_the_attempted_assassination_of_makhno focus = MKH_modern_nation }
 		relative_position_id = MKH_economic_boom
@@ -991,7 +1002,23 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_organization_of_science_in_zaporozhye_national_university"
-		    add_research_slot = 1
+		    add_research_slot = 2
+			add_tech_bonus = {
+				bonus = 1.25
+				uses = 1
+				category = infantry_tech
+            }
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 3
+				category = support_tech 
+            }
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = construction_tech
+            }
+			
 	    }
     }
 	
@@ -1037,7 +1064,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_make_an_inventory"
-		    
+		    MKH = { country_event = { id = mkh.5 days = 1 } }
 	    }
     }
 	
@@ -1060,8 +1087,12 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_the_reformation_of_the_council"
-		    add_stability = 0.20
-			add_war_support = 0.20	
+		    add_stability = 0.15
+			add_war_support = 0.10
+			add_timed_idea = {
+                idea = MKH_reformation_of_the_council
+                days = 180
+            }
 	    }
     } 
 	
@@ -1084,7 +1115,7 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_organize_a_workers_strike"
-		    
+		    unlock_decision_category_tooltip = ukr_anarchy_support_category
 	    }
     }
 	

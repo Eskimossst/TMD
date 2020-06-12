@@ -2347,4 +2347,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_mackhno_near_death.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_generic_factory"
+		texturefile = "gfx/event_pictures/report_event_generic_factory.dds"
+	}
+	
 }
