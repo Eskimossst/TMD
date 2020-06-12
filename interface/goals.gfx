@@ -2052,4 +2052,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/capital_of_anarchy.dds"
 	}
 	
+	SpriteType = { 
+		name = "GFX_generic_positive_mobile_workers"
+		texturefile = "gfx/interface/goals/generic_positive_mobile_workers.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_prison_nation"
+		texturefile = "gfx/interface/goals/generic_prison_nation.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_negative_workers"
+		texturefile = "gfx/interface/goals/generic_negative_workers.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_navy_lessons_of_the_great_war"
+		texturefile = "gfx/interface/goals/generic_navy_lessons_of_the_great_war.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_mobilization"
+		texturefile = "gfx/interface/goals/generic_mobilization.dds"
+	}
+	
 }

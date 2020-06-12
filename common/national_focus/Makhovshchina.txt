@@ -427,7 +427,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_from_old_to_small #От старого до малого
-		icon = GFX_goal_unknown
+		icon = GFX_generic_mobilization
 		prerequisite = { focus = MKH_peace_to_the_cottages_war_to_the_palaces focus = MKH_execution_of_traitors }
 		relative_position_id = MKH_peace_to_the_cottages_war_to_the_palaces
 		x = -1
@@ -864,7 +864,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_political_arrests #Политические аресты
-		icon = GFX_goal_unknown
+		icon = GFX_generic_prison_nation
 		prerequisite = { focus = MKH_overcoming_hunger }
 		relative_position_id = MKH_overcoming_hunger
 		x = 0
@@ -1098,7 +1098,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_organize_a_workers_strike #Организовать забастовку рабочих
-		icon = GFX_goal_unknown
+		icon = GFX_generic_negative_workers
 		prerequisite = { focus = MKH_the_capital_of_anarchy focus = MKH_formation_of_the_economy focus = MKH_organization_of_science_in_zaporozhye_national_university focus = MKH_deal_with_jews_in_novo-kovno }
 		relative_position_id = MKH_the_capital_of_anarchy
 		x = -5
@@ -1144,7 +1144,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_to_establish_production #Наладить производство
-		icon = GFX_goal_unknown
+		icon = GFX_generic_positive_mobile_workers
 		prerequisite = { focus = MKH_organize_a_workers_strike focus = MKH_the_reformation_of_the_council focus = MKH_make_an_inventory  }
 		relative_position_id = MKH_make_an_inventory
 		x = -1
@@ -2193,7 +2193,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_lessons_from_the_civil_war #Уроки гражданской войны
-		icon = GFX_goal_unknown
+		icon = GFX_generic_navy_lessons_of_the_great_war
 		prerequisite = { focus = MKH_production_of_destroyers focus = MKH_control_of_the_black_sea }
 		relative_position_id = MKH_production_of_destroyers
 		x = -1
