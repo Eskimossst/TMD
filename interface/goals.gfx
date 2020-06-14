@@ -2077,4 +2077,39 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_mobilization.dds"
 	}
 	
+	SpriteType = { 
+		name = "GFX_discovery_of_the_object"
+		texturefile = "gfx/interface/goals/discovery_of_the_object.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_closed_city"
+		texturefile = "gfx/interface/goals/generic_closed_city.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_defend_nation"
+		texturefile = "gfx/interface/goals/generic_defend_nation.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_focus_artillery_doctrine"
+		texturefile = "gfx/interface/goals/generic_focus_artillery_doctrine.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_nuclear_technology"
+		texturefile = "gfx/interface/goals/generic_nuclear_technology.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_study_of_science"
+		texturefile = "gfx/interface/goals/generic_study_of_science.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_man_focus"
+		texturefile = "gfx/interface/goals/man_focus.dds"
+	}
+	
 }

@@ -12,7 +12,7 @@ ideas = {
 			modifier = {
 			}
         }
-		MKH_the_problem_of_equipment_production = { 
+		MKH_the_problem_of_equipment_production_start = { 
             picture = FRA_factory_strikes 
             removal_cost = -1 
 			allowed = { always = no }
@@ -24,6 +24,20 @@ ideas = {
 				consumer_goods_factor = 0.05
 				training_time_factor = 0.1
 				production_speed_buildings_factor = -0.1
+			}
+        }
+		MKH_the_problem_of_equipment_production_continuation = { 
+            picture = FRA_factory_strikes 
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+				training_time_factor = 0.05
+				production_speed_buildings_factor = -0.05
 			}
         }
 		MKH_old_to_small = { 
@@ -38,20 +52,6 @@ ideas = {
 				conscription = 0.03
 				training_time_factor = 0.05
 			}
-        }	
-		MKH_modern_production = { 
-            picture = man_five_year_plan_industry 
-            removal_cost = -1 
-			allowed = { always = no }
-			allowed_civil_war = {
-				has_government = fascism
-			}
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-				production_speed_buildings_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
-			}
         }
 		MKH_organization_of_scientists = { 
             picture = JAP_supremacy_of_technology
@@ -65,7 +65,7 @@ ideas = {
 				research_speed_factor = 0.15
 			}
         }
-	    MKH_formation_the_economy = { 
+	    MKH_formation_the_economy_start = { 
             picture = generic_goods_red_bonus 
             removal_cost = -1 
 			allowed = { always = no }
@@ -74,7 +74,26 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+        }
+		MKH_formation_the_economy_continuation = { 
+            picture = man_five_year_plan_industry 
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
 			}
         }
 		MKH_the_birthplace_of_anarchy = { 
@@ -376,20 +395,6 @@ ideas = {
 		
 			traits = { publicist }
 		}
-		
-		ilya_struk = {
-		
-			picture = ilya_struk
-			
-			allowed = {
-				original_tag = "MKH"
-			}
-			available = {
-			    has_government = neutrality
-			}
-		
-			traits = { colonel_neutraliry }
-		}
 	}
 	
 	army_chief = {
@@ -538,6 +543,24 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+		
+		general_ilya_struk = {
+		
+			picture = general_ilya_struk
+			
+			allowed = {
+				original_tag = "MKH"
+			}
+			available = {
+			    has_government = neutrality
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+		
+			traits = { colonel_neutraliry }
 		}
 	}
 	

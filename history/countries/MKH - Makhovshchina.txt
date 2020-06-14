@@ -117,7 +117,18 @@ create_country_leader = {
 	traits = {
 		sailor_zheleznyak
 	}
-}
+} 
+
+create_country_leader = {
+	name = "Pavel Scrupule"
+	desc = "POLITICS_JIGME_WANGCHUCK_DESC"
+	picture = "gfx/leaders/MKH/Pavel_Scrupule.dds"
+	expire = "1965.1.1"
+	ideology = monarchy_ideology
+	traits = {
+		#
+	}
+} 
 
 1939.1.1 = {
 	set_politics = {

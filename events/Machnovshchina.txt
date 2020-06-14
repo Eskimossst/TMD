@@ -54,7 +54,7 @@ country_event = {
 			amount = 1500
 		}
 		add_equipment_to_stockpile = {
-			type = artillery
+			type = artillery_equipment
 			amount = 200
 		}
 		add_political_power = 20
@@ -125,7 +125,7 @@ country_event = {
             producer = MKH
         }
 		add_equipment_to_stockpile = {
-            type = light_air
+            type = light_air_equipment
             amount = 5
             producer = MKH
         }
