@@ -644,7 +644,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_modern_nation #Современная нация
-		icon = GFX_goal_unknown
+		icon = GFX_generic_elite_industry_reform
 		prerequisite = { focus = MKH_mobilisation_of_workers focus = MKH_attract_investors }
 		relative_position_id = MKH_attract_investors
 		x = 1
@@ -671,7 +671,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_agricultural_sector #Аграрный сектор
-		icon = GFX_goal_unknown
+		icon = GFX_generic_agrarian_reform
 		prerequisite = { focus = MKH_create_a_precedent focus = MKH_from_old_to_small focus = MKH_to_rob_the_ukrainian_locomotives }
 		relative_position_id = MKH_create_a_precedent
 		mutually_exclusive = { focus = MKH_industrialization  }
@@ -814,7 +814,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_economic_boom #Экономический бум
-		icon = GFX_goal_unknown
+		icon = GFX_generic_elite_agrarian_reform
 		prerequisite = { focus = MKH_highway_gulyai-pole-sevastopol focus = MKH_resource_exploration }
 		relative_position_id = MKH_highway_gulyai-pole-sevastopol
 		x = 1
@@ -841,7 +841,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_overcoming_hunger #Преодоление голода
-		icon = GFX_goal_unknown
+		icon = GFX_overcoming_hunger
 		prerequisite = { focus = MKH_to_rob_the_ukrainian_locomotives }
 		relative_position_id = MKH_to_rob_the_ukrainian_locomotives
 		x = 0
@@ -893,7 +893,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_the_attempted_assassination_of_makhno #Покушение на батьку Махно
-		icon = GFX_goal_unknown
+		icon = GFX_attempted_assassination_of_makhno
 		prerequisite = { focus = MKH_political_arrests }
 		relative_position_id = MKH_political_arrests
 		x = 0
@@ -1068,7 +1068,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_the_reformation_of_the_council #Реформация совета
-		icon = GFX_goal_unknown
+		icon = GFX_generic_reformation_of_the_council
 		prerequisite = { focus = MKH_the_capital_of_anarchy focus = MKH_formation_of_the_economy focus = MKH_organization_of_science_in_zaporozhye_national_university focus = MKH_deal_with_jews_in_novo-kovno }
 		relative_position_id = MKH_the_capital_of_anarchy
 		x = -3
@@ -1119,7 +1119,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_ask_the_scientists #Расспросить ученых
-		icon = GFX_goal_unknown
+		icon = GFX_generic_study_of_science
 		prerequisite = { focus = MKH_organize_a_workers_strike focus = MKH_the_reformation_of_the_council focus = MKH_make_an_inventory  }
 		relative_position_id = MKH_organize_a_workers_strike
 		x = 1
@@ -1168,7 +1168,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_anarchism_of_the_world #Анархизм всего мира
-		icon = GFX_goal_unknown
+		icon = GFX_anarchism_of_the_world
 		prerequisite = { focus = MKH_ask_the_scientists focus = MKH_to_establish_production  }
 		relative_position_id = MKH_ask_the_scientists
 		x = 1

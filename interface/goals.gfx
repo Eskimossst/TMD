@@ -2112,4 +2112,49 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/man_focus.dds"
 	}
 	
+	SpriteType = { 
+		name = "GFX_generic_agrarian_reform"
+		texturefile = "gfx/interface/goals/generic_agrarian_reform.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_attempted_assassination_of_makhno"
+		texturefile = "gfx/interface/goals/attempted_assassination_of_makhno.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_collect_cartridges"
+		texturefile = "gfx/interface/goals/collect_cartridges.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_mobilization"
+		texturefile = "gfx/interface/goals/generic_mobilization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_overcoming_hunger"
+		texturefile = "gfx/interface/goals/overcoming_hunger.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_anarchism_of_the_world"
+		texturefile = "gfx/interface/goals/anarchism_of_the_world.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_elite_agrarian_reform"
+		texturefile = "gfx/interface/goals/generic_elite_agrarian_reform.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_elite_industry_reform"
+		texturefile = "gfx/interface/goals/generic_elite_industry_reform.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_reformation_of_the_council"
+		texturefile = "gfx/interface/goals/generic_reformation_of_the_council.dds"
+	}
+	
 }
