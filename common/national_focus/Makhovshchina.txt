@@ -36,7 +36,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_an_oasis_for_anarchists #Оазис для анархистов
-		icon = GFX_goal_unknown
+		icon = GFX_an_oasis_for_anarchists
 		prerequisite = { focus = MKH_the_strengthening_of_the_power_of_makhno }
 		relative_position_id = MKH_the_strengthening_of_the_power_of_makhno
 		x = 0
@@ -82,7 +82,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_looting_of_the_crimean_elite #Разграбление крымской элиты
-		icon = GFX_goal_unknown
+		icon = GFX_rob_the_elite
 		prerequisite = { focus = MKH_an_oasis_for_anarchists }
 		relative_position_id = MKH_an_oasis_for_anarchists
 		x = 0
@@ -129,7 +129,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_hang_on_the_pillars_of_the_alarmists #Повесить на столбах паникеров
-		icon = GFX_goal_unknown
+		icon = GFX_hang_it_on_a_lamppost
 		prerequisite = { focus = MKH_looting_of_the_crimean_elite focus = MKH_the_formation_of_the_communes_in_the_crimea focus = MKH_black_guard }
 		relative_position_id = MKH_looting_of_the_crimean_elite
 		x = -1
@@ -152,7 +152,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_harvest_of_the_crimea #Собрать урожай Крыма
-		icon = GFX_goal_unknown
+		icon = GFX_harvested_crop
 		prerequisite = { focus = MKH_looting_of_the_crimean_elite focus = MKH_the_formation_of_the_communes_in_the_crimea focus = MKH_black_guard }
 		relative_position_id = MKH_looting_of_the_crimean_elite
 		x = 1
@@ -319,7 +319,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_collect_cartridges_for_a_rainy_day #Собрать патроны на черный день
-		icon = GFX_goal_unknown
+		icon = GFX_collect_cartridges
 		x = 15
 		y = 0
 		cost = 2
@@ -695,7 +695,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_raise_virgin_land #Поднять целину
-		icon = GFX_goal_unknown
+		icon = GFX_generic_raise_virgin_land
 		prerequisite = { focus = MKH_agricultural_sector }
 		relative_position_id = MKH_agricultural_sector
 		x = -1
@@ -1268,7 +1268,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_women_in_the_army #Женщины в армии
-		icon = GFX_goal_unknown
+		icon = GFX_woman_in_army
 		prerequisite = { focus = MKH_militarization }
 		relative_position_id = MKH_militarization
 		x = 0
@@ -1346,7 +1346,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_women_in_command #Женщины в командовании
-		icon = GFX_goal_unknown
+		icon = GFX_generic_command
 		prerequisite = { focus = MKH_insulation }
 		relative_position_id = MKH_insulation
 		x = 0
@@ -1732,7 +1732,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_new_command #Новое командование
-		icon = GFX_goal_unknown
+		icon = GFX_generic_high_command
 		prerequisite = { focus = MKH_pavlogradskayal_military_academy focus = MKH_open_zaporozhye_machine-building_design focus = MKH_solve_the_problem_of_equipment_production_in_the_council focus = MKH_reform_in_the_army focus = MKH_the_dominance_of_the_aircraft_makhno focus = MKH_to_open_the_dnepropetrovsk_aircraft_repair_plant }
 		relative_position_id = MKH_reform_in_the_army
 		x = 0
@@ -1775,7 +1775,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_the_purchase_of_the_aircraft #Покупка самолетов
-		icon = GFX_goal_unknown
+		icon = GFX_generic_buy_fighters
 		prerequisite = { focus = MKH_pavlogradskayal_military_academy focus = MKH_open_zaporozhye_machine-building_design focus = MKH_solve_the_problem_of_equipment_production_in_the_council focus = MKH_reform_in_the_army focus = MKH_the_dominance_of_the_aircraft_makhno focus = MKH_to_open_the_dnepropetrovsk_aircraft_repair_plant }
 		relative_position_id = MKH_the_dominance_of_the_aircraft_makhno
 		x = 0
@@ -1904,7 +1904,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_to_steal_the_experimental_equipment #Выкрасть экспериментальное оборудование 
-		icon = GFX_generic_study_of_science
+		icon = GFX_steal_the_experimental_equipment
 		prerequisite = { focus = MKH_request_specialists_from_the_kharkiv_tank_factory focus = MKH_request_specialists_from_man_military_factories }
 		relative_position_id = MKH_request_specialists_from_the_kharkiv_tank_factory
 		x = -1
@@ -1950,7 +1950,7 @@ focus_tree = {
 	
 	focus = {
 		id = MKH_protecting_the_nation #Защита нации
-		icon = GFX_goal_unknown
+		icon = GFX_generic_save_nation
 		prerequisite = { focus = MKH_request_specialists_from_the_kharkiv_tank_factory focus = MKH_request_specialists_from_man_military_factories }
 		relative_position_id = MKH_request_specialists_from_man_military_factories
 		x = 1

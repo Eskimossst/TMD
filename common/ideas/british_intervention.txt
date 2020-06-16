@@ -1,0 +1,107 @@
+ideas = {
+	country = {
+		BIR_intervention_0 = {
+			removal_cost = -1
+			picture = 11
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.3
+				political_power_gain = -0.5
+			}
+		}
+		BIR_intervention_1 = {
+			removal_cost = -1
+			picture = 11
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.15
+			}
+		}
+		BIR_local_militia = {
+			removal_cost = -1
+			allowed = {
+				has_completed_focus = BIR_province_control
+			}
+			picture = 111
+			modifier = {
+				conscription = 0.01
+				training_time_factor = -0.05
+			}
+		}
+		BIR_antisov_propaganda = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			picture = 11
+			modifier = {
+				conscription = -0.03
+				war_support_factor = -0.15
+				political_power_gain = -0.5
+			}
+		}
+		BIR_british_influence = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			picture = 11
+			modifier = {
+				democratic_drift = 0.05
+				neutrality_drift = 0.05
+				monarchy_drift = 0.05
+			}
+		}
+		BIR_imperial_ambitious = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			picture = 11
+			modifier = {
+				offence = 0.1
+				defence = 0.1
+				justify_war_goal_time = -0.15
+			}
+		}
+		BIR_pounds_depence = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			picture = 11
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.005
+			}
+		}
+		BIR_country_rebuild = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			picture = 11
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		BIR_industrial_politics = {
+			removal_cost = -1
+			allowed = {
+				always = yes
+			}
+			picture = 11
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+				
+				
+		

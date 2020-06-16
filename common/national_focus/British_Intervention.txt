@@ -1,0 +1,691 @@
+focus_tree = {
+	id = bir_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = bir
+		}
+	}
+	continuous_focus_position = { x = 100 y = 2000 }
+	
+	default = no
+	
+	focus = {
+		id = BIR_begin_invasion #Начало вторжения
+		icon = 111
+		x = 8
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	
+	focus = {
+		id = BIR_army_moving #Переброска войск
+		icon = 111
+		x = 8
+		y = 1
+		cost = 10
+		prerequisite = { focus = BIR_begin_invasion }
+		completion_reward = {
+			custom_effect_tooltip = bir_british_div
+			hidden_effect = {
+				division_template = {
+					name = "British army intersections"
+					priority = 1
+					division_names_group = BIR_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						field_hospital = { x = 0 y = 0 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+					create_unit = {
+						division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+						owner = BIR 
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_province_control #Контроль над провицниями 
+		icon = 111
+		x = 8
+		y = 2
+		cost = 10
+		prerequisite = { focus = BIR_army_moving } 
+		completion_reward = {
+			add_ideas = BIR_local_militia
+		}
+	}
+	focus = {
+		id = BIR_control_locals #Контроль населения
+		icon = 11
+		x = 6 
+		y = 2
+		cost = 10
+		prerequisite = { focus = BIR_army_moving } 
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = BIR_intervention_0
+				add_idea = BIR_intervention_1
+			}
+		}
+	}
+	focus = {
+		id = BIR_local_industry #Экспроприировать местную промышленность
+		x = 10
+		y = 2
+		cost = 10
+		prerequisite = { focus = BIR_army_moving } 
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_enemy_damage #Обескровить врагов 
+		x = 4
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIR_province_control } 
+		completion_reward = {
+			SOV = { # ПОМЕНЯТЬ ВСЕ ТЕГИ, ЭТИ ДЛЯ ТЕСТА
+				add_ideas = BIR_antisov_propaganda
+			}
+		}
+	}
+	focus = {
+		id = BIR_ask_lend_lease # Запросить лендлиз
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIR_province_control } 
+		select_effect = {
+			country_event = {
+				id = bir.1
+				days = 50
+			}
+		}
+		completion_reward = {
+			effect_tooltip = {
+				country_event = {
+					id = bir.1
+					days = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_fuel #Топливо
+		x = 8
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIR_province_control } 
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_royal_air # Королевская авиация
+		x = 10
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIR_province_control } 
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 100
+			}
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment
+				amount = 50
+			}
+		}
+	}
+	focus = {
+		id = BIR_military_government #Военное Правительство
+		x = 12
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIR_province_control } 
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+	focus = { 
+		id = BIR_keep_puppet # Остаться марионеткой
+		x = 2
+		y = 4
+		cost = 10
+		prerequisite = { focus = BIR_fuel }
+		mutually_exclusive = { focus = BIR_russian_nation }
+		completion_reward = {
+			ENG = {
+				puppet = BIR
+			}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = puppet_accepted
+			}
+			reverse_add_opinion_modifier = {
+				target = ENG
+				modifier = puppet_accepted
+			}
+		}
+	}
+	focus = {
+		id = BIR_ENG_greatness # Боитанское Величие
+		x = 0
+		y = 5
+		cost = 10
+		prerequisite = { focus = BIR_keep_puppet }
+		completion_reward = {
+			add_ideas = BIR_british_influence
+		}
+	}
+	focus = {
+		id = BIR_imperial # Имперские Амбиции
+		x = 0
+		y = 6
+		cost = 10
+		prerequisite = { focus = BIR_ENG_greatness }
+		completion_reward = {
+			add_ideas = BIR_imperial_ambitious
+		}
+	}
+	focus = {
+		id = BIR_democracy # Привнести Демократию
+		x = 4
+		y = 5
+		cost = 10
+		prerequisite = { focus = BIR_keep_puppet }
+		completion_reward = {
+			retire_country_leader = yes
+			set_politics = {
+				ruling_party = democratic
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.25
+			}
+		}
+	}
+	focus = {
+		id = BIR_finishing #Завершить начатое
+		x = 4
+		y = 6
+		cost = 10
+		prerequisite = { focus = BIR_democracy }
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = BIR_intervention_0
+				}
+				remove_ideas = BIR_intervention_0
+			}
+			else_if = {
+				limit = {
+					has_idea = BIR_intervention_1
+				}
+				remove_ideas = BIR_intervention_1
+			}
+		}
+	}
+	focus = {
+		id = BIR_russian_colony #Колония
+		x = 4
+		y = 7
+		cost = 10
+		prerequisite = { focus = BIR_finishing }
+		completion_reward = {
+			set_cosmetic_tag = BIR_RUS 
+		}
+	}
+	focus = {
+		id = BIR_russian_nation # Независимость
+		x = 14
+		y = 4
+		cost = 10
+		prerequisite = { focus = BIR_fuel }
+		mutually_exclusive = { focus = BIR_keep_puppet }
+		completion_reward = {
+			ENG = {
+				end_puppet = BIR
+			}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = puppet_denied
+			}
+			reverse_add_opinion_modifier = {
+				target = ENG
+				modifier = puppet_denied
+			}
+		}
+	}
+	focus = {
+		id = BIR_russian_legends #Легенды
+		x = 16
+		y = 5
+		cost = 10
+		prerequisite = { focus = BIR_russian_nation }
+		completion_reward = {
+			create_field_marshal = {
+				
+			}
+			create_field_marshal = {
+			
+			}
+		}
+	}
+	focus = {
+		id = BIR_wartime_credits # Кредит военного времени
+		x = 16
+		y = 6
+		cost = 10
+		prerequisite = { focus = BIR_russian_legends }
+		completion_reward = {
+			country_event = {
+				id = bir.5
+			}
+		}
+	}
+	focus = {
+		id = BIR_seek_help # Найти поддержку
+		x = 12
+		y = 5
+		cost = 10
+		prerequisite = { focus = BIR_russian_nation }
+		completion_reward = {
+			GER = {
+				give_guarantee = BIR
+			}
+		}
+	}
+	focus = {
+		id = BIR_final_stand # Финальный рывок
+		x = 12
+		y = 6
+		cost = 10
+		prerequisite = { focus = BIR_seek_help } 
+		completion_reward = {	
+			if = {
+				limit = {
+					has_idea = BIR_intervention_0
+				}
+				remove_ideas = BIR_intervention_0
+			}
+			else_if = {
+				limit = {
+					has_idea = BIR_intervention_1
+				}
+				remove_ideas = BIR_intervention_1
+			}
+		}
+	}
+	focus = {
+		id = BIR_russian_empire # Корона Империи
+		x = 12
+		y = 7
+		cost = 10
+		prerequisite = { focus = BIR_final_stand }
+		completion_reward = {
+			set_cosmetic_tag = BIR_EMP
+		}
+	}
+	focus = {
+		id = BIR_resources
+		x = 8
+		y = 7
+		cost = 10
+		prerequisite = { focus = BIR_fuel }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_currency
+		x = 6
+		y = 8
+		cost = 10
+		prerequisite = { focus = BIR_resources }
+		completion_reward = {
+			country_event = {
+				id = bir.7
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = BIR_traitors # Предатели
+		x = 8
+		y = 8
+		cost = 10
+		prerequisite = { focus = BIR_resources }
+		completion_reward = {
+			add_stability = 0.15
+		}
+	}
+	focus = {
+		id = BIR_country_rebuild # Восстановление страны
+		x = 10
+		y = 8
+		cost = 10
+		prerequisite = { focus = BIR_resources }
+		completion_reward = {
+			add_ideas = BIR_country_rebuild
+		}
+	}
+	focus = {
+		id = BIR_JIR_war
+		x = 7
+		y = 9
+		cost = 10
+		prerequisite = { focus = BIR_traitors }
+		completion_reward = {
+			declare_war_on = {
+				target = JIR
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BIR_CIR_war 
+		x = 9
+		y = 9
+		cost = 10
+		prerequisite = { focus = BIR_traitors }
+		completion_reward = {
+			declare_war_on = {
+				target = CIR
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = BIR_united_russia 
+		x = 8
+		y = 10
+		cost = 10
+		prerequisite = { focus = BIR_CIR_war }
+		prerequisite = { focus = BIR_JIR_war }
+		completion_reward = {
+			load_focus_tree = rus_bri_focus_tree
+		}
+	}
+	focus = {
+		id = BIR_industrial_politics
+		x = 24
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_timed_idea = {
+				idea = BIR_industrial_politics
+				days = 90
+			}
+		}
+	}
+	focus = {
+		id = BIR_roads
+		x = 22
+		y = 1
+		cost = 10
+		prerequisite = { focus = BIR_industrial_politics }
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = BIR 
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_military_training
+		x = 26
+		y = 1
+		cost = 10
+		prerequisite = { focus = BIR_industrial_politics }
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = BIR_opium
+		x = 22
+		y = 2
+		cost = 10
+		prerequisite = { focus = BIR_roads }
+		completion_reward = {
+			add_stability = -0.1
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_rebuild_agrarian
+		x = 26
+		y = 2
+		cost = 10
+		prerequisite = { focus = BIR_military_training }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_tanks
+		x = 24
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIR_opium }
+		prerequisite = { focus = BIR_rebuild_agrarian }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_light_armor
+				category = cat_medium_armor
+			}
+		}
+	}
+	focus = {
+		id = BIR_air
+		x = 22
+		y = 4
+		cost = 10
+		prerequisite = { focus = BIR_tanks }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = tactical_bomber
+				category = cas_bomber
+			}
+		}
+	}
+	focus = {
+		id = BIR_capital
+		x = 24
+		y = 4
+		cost = 10
+		prerequisite = { focus = BIR_tanks }
+		completion_reward = {
+			capital_scope = {
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	focus = {
+		id = BIR_workers
+		x = 26
+		y = 4
+		cost = 10
+		prerequisite = { focus = BIR_tanks }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = construction_tech 
+				category = excavation_tech
+			}
+		}
+	}
+	focus = {
+		id = BIR_airfields
+		x = 23
+		y = 5
+		cost = 10
+		prerequisite = { focus = BIR_capital }
+		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_rescue_army
+		x = 25
+		y = 5
+		cost = 10
+		prerequisite = { focus = BIR_capital }
+		completion_reward = {
+			capital_scope = {
+				create_unit = {
+					division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+					owner = BIR 
+				}
+				create_unit = {
+					division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+					owner = BIR 
+				}
+				create_unit = {
+					division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+					owner = BIR 
+				}
+				create_unit = {
+					division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+					owner = BIR 
+				}
+				create_unit = {
+					division = " name = \"British army intersections\" division_template = \"British army intersections\" start_experience_factor = 1 start_equipment_factor = 1 "
+					owner = BIR 
+				}
+			}
+		}
+	}
+	focus = {
+		id = BIR_mil_eco
+		x = 24
+		y = 6
+		cost = 10
+		prerequisite = { focus = BIR_rescue_army }
+		prerequisite = { focus = BIR_airfields }
+		completion_reward = {
+			add_ideas = war_economy
+		}
+	}
+	focus = {
+		id = BIR_conscript
+		x = 24
+		y = 7
+		cost = 10
+		prerequisite = { focus = BIR_mil_eco }
+		completion_reward = {
+			add_ideas = extensive_conscription
+		}
+	}

@@ -2157,4 +2157,59 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_reformation_of_the_council.dds"
 	}
 	
+	SpriteType = { 
+		name = "GFX_an_oasis_for_anarchists"
+		texturefile = "gfx/interface/goals/an_oasis_for_anarchists.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_command"
+		texturefile = "gfx/interface/goals/generic_command.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_high_command"
+		texturefile = "gfx/interface/goals/generic_high_command.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_save_nation"
+		texturefile = "gfx/interface/goals/generic_save_nation.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_raise_virgin_land"
+		texturefile = "gfx/interface/goals/generic_raise_virgin_land.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_hang_it_on_a_lamppost"
+		texturefile = "gfx/interface/goals/hang_it_on_a_lamppost.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_harvested_crop"
+		texturefile = "gfx/interface/goals/harvested_crop.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_rob_the_elite"
+		texturefile = "gfx/interface/goals/rob_the_elite.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_steal_the_experimental_equipment"
+		texturefile = "gfx/interface/goals/steal_the_experimental_equipment.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_woman_in_army"
+		texturefile = "gfx/interface/goals/woman_in_army.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_buy_fighters"
+		texturefile = "gfx/interface/goals/generic_buy_fighters.dds"
+	}
+	
 }

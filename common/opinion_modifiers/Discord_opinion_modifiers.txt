@@ -3,4 +3,12 @@ opinion_modifiers = {
 	#MKH
 	MKH_robbed_a_train = { value = -20 }
 	MKH_tried_rob_a_train = { value = -15 }
+	
+	#BIR
+	landlease_accepted = { value = 25 }
+	landlease_denied = { value = -25 }
+	puppet_accepted = { value = 25 }
+	puppet_denied = { value = -25 }
+	pounds_currency = { value = 25 }
+	rubles_currency = { value = -25 
 }
