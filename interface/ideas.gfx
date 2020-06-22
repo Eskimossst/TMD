@@ -4583,6 +4583,56 @@ spriteTypes = {
     spriteType = {
 		name = "GFX_idea_marine_army"
 		texturefile = "gfx/interface/ideas/marine_army.dds" 
+	} 
+	
+	spriteType = {
+		name = "GFX_idea_celebration_of_the_elite"
+		texturefile = "gfx/interface/ideas/celebration_of_the_elite.dds" 
 	}
-
+	
+	spriteType = {
+		name = "GFX_idea_the_sale_of_the_crimea"
+		texturefile = "gfx/interface/ideas/the_sale_of_the_crimea.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_the_sale_of_the_crimea_positive"
+		texturefile = "gfx/interface/ideas/the_sale_of_the_crimea_positive.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_enemies_among_us"
+		texturefile = "gfx/interface/ideas/enemies_among_us.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_at_war"
+		texturefile = "gfx/interface/ideas/at_war.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_broken_economy"
+		texturefile = "gfx/interface/ideas/broken_economy.dds" 
+	} 
+	
+	spriteType = {
+		name = "GFX_idea_country_rebuild"
+		texturefile = "gfx/interface/ideas/country_rebuild.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_industrial_policy"
+		texturefile = "gfx/interface/ideas/industrial_policy.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_defeatist"
+		texturefile = "gfx/interface/ideas/defeatist.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_opium_trade"
+		texturefile = "gfx/interface/ideas/opium_trade.dds" 
+	}
+	
 }

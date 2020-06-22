@@ -287,4 +287,26 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	king_russian_emp = {
+		random = no
+		stability_factor = 0.15
+		political_power_gain = 0.10
+		monarchy_drift = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	queen_russian_emp = {
+		random = no
+		stability_factor = 0.15
+		political_power_gain = 0.10
+		democratic_drift = 0.25
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

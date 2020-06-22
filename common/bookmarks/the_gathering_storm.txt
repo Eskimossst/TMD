@@ -115,6 +115,7 @@ bookmarks = {
 			ideas = {
 				MKH_risk_of_starvation
 				MKH_the_problem_of_equipment_production_start
+				MKH_enemies_among_us
 			}	
 			focuses = {
 				MKH_the_strengthening_of_the_power_of_makhno

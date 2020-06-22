@@ -40,6 +40,35 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 			}
         }
+		MKH_enemies_among_us = { 
+            picture = enemies_among_us
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+			    political_power_gain = -0.5
+			    stability_factor = -0.15
+				neutrality_drift = 0.10
+				communism_drift = 0.10
+			}
+        } 
+		MKH_enemies_are_repressed = { 
+            picture = generic_purge
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+			    political_power_gain = -0.10
+			    stability_factor = -0.20
+				anarchism_drift = 0.20
+			}
+        }
 		MKH_old_to_small = { 
             picture = spa_la_division_azul
             removal_cost = -1 
@@ -114,9 +143,10 @@ ideas = {
         }
 		MKH_anarchism_of_the_world = {
 			picture = spr_anarchist_society
-			allowed = {
-			}
+			allowed = { always = no }
+			
 			removal_cost = -1
+			
 			modifier = {
 				anarchism_drift = 0.10
 			}
@@ -347,6 +377,83 @@ ideas = {
 				political_power_gain = 0.15
 				trade_opinion_factor = 0.15
 				enemy_justify_war_goal_time = 0.15
+			}
+		}
+		MKH_counter_protection = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.10
+				join_faction_tension = -0.10
+				enemy_justify_war_goal_time = 0.10
+			}
+		}
+		MKH_protecting_nation = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				stability_factor = 0.10
+				drift_defence_factor = 0.15
+				join_faction_tension = -0.15
+				enemy_justify_war_goal_time = 0.15
+			}
+		}
+		MKH_crimean_elite = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = celebration_of_the_elite
+			modifier = {
+				war_support_factor = -0.10
+				political_power_gain = -0.05
+				neutrality_drift = 0.05
+			}
+		}
+		MKH_bought_crimea = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = the_sale_of_the_crimea
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.10
+			}
+		}
+		MKH_the_sale_of_the_crimea = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = the_sale_of_the_crimea_positive
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.10
 			}
 		}
 	}
@@ -580,6 +687,10 @@ ideas = {
 				OR = {
 				    controls_state = 221
 					has_completed_focus = MKH_request_specialists_from_the_kharkiv_tank_factory
+					has_country_flag = MKH_approve_a_request_ukr
+				}
+				NOT = {
+				    has_country_flag = MKH_do_not_approve_an_application_ukr
 				}
 			}
 			
@@ -602,7 +713,13 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = MKH_request_specialists_from_man_military_factories
+			    OR = {
+				    has_completed_focus = MKH_request_specialists_from_man_military_factories
+				    has_country_flag = MKH_approve_a_request_ger
+				}
+				NOT = {
+				    has_country_flag = MKH_do_not_approve_an_application_ger
+				}
 			}
 			
 			research_bonus = {

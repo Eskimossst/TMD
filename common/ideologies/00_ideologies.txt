@@ -25,6 +25,9 @@ ideologies = {
 			
 			national_liberals = {
 			}
+			
+			constitutional_monarchy = {
+			}
 		}
 		
 		dynamic_faction_names = {

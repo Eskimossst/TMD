@@ -30,7 +30,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 3573
+		location = 9712
 		division_template = "Infantry divisions of Batka Makhno"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
@@ -54,7 +54,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 767
+		location = 11700
 		division_template = "Infantry divisions of Batka Makhno"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3
@@ -78,7 +78,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 11561
+		location = 486
 		division_template = "Infantry divisions of Batka Makhno"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.3

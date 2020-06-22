@@ -2352,4 +2352,19 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_generic_factory.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_mackhno"
+		texturefile = "gfx/event_pictures/report_event_mackhno.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_crimea"
+		texturefile = "gfx/event_pictures/report_event_crimea.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_generic_purged"
+		texturefile = "gfx/event_pictures/report_event_generic_purged.dds"
+	}
+	
 }
