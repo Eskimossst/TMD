@@ -25,7 +25,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
 		}
 		
 		completion_reward = {
@@ -50,7 +54,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
 		}
 		
 		completion_reward = {
@@ -73,7 +81,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
 		}
 		
 		completion_reward = {
@@ -99,7 +111,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
 		}
 		
 		completion_reward = {
@@ -123,7 +139,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
+			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
@@ -146,7 +167,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
+			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
@@ -169,7 +195,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
+			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
@@ -192,7 +223,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
 		}
 		
 		completion_reward = {
@@ -216,7 +251,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
+			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
@@ -239,7 +279,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
 		}
 		
 		completion_reward = {
@@ -262,7 +306,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
+			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
@@ -285,7 +334,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
+			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
@@ -308,7 +362,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
+			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
@@ -331,7 +390,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
+			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
@@ -354,7 +418,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 100
+		}
+		
+		available = {
+			has_government = anarchism
+			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {

@@ -353,7 +353,12 @@ country_event = {
 		    target = MKH
 			modifier = MKH_sold_crimea
 		}
-		
+		UKR = {
+		    add_timed_idea = {
+                idea = MKH_the_sale_of_the_crimea
+                days = 180
+            }
+	    }
 	}
 	option = {
 		name = mkh.13.b

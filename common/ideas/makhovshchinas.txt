@@ -54,6 +54,21 @@ ideas = {
 				neutrality_drift = 0.10
 				communism_drift = 0.10
 			}
+        }
+        MKH_there_are_fewer_enemies = { 
+            picture = enemies_among_us
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+			    political_power_gain = -0.25
+			    stability_factor = -0.075
+				neutrality_drift = 0.05
+				communism_drift = 0.05
+			}
         } 
 		MKH_enemies_are_repressed = { 
             picture = generic_purge
