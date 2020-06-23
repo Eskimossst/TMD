@@ -120,7 +120,10 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_destroy_the_parasites"
-		    remove_ideas = MKH_enemies_among_us
+			swap_ideas = {
+                remove_idea = MKH_enemies_among_us
+                add_idea = MKH_there_are_fewer_enemies
+            }
 			MKH = { country_event = { id = mkh.15 days = 5 } }
 	    }
 	}
@@ -200,12 +203,13 @@ focus_tree = {
 		
 		available = {
 			has_government = anarchism
-			has_global_flag = MKH_always_a_lie
+			controls_state = 137
 		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_the_formation_of_the_communes_in_the_crimea"
-			
+			add_state_core = 137
+			MKH = { country_event = { id = mkh.16 days = 5 } }
 		}
     }
 	
@@ -228,12 +232,13 @@ focus_tree = {
 		
 		available = {
 			has_government = anarchism
+			controls_state = 137
 		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_looting_of_the_crimean_elite"
 			add_stability = 0.15
-			add_war_support = 0.10
+			remove_ideas = MKH_crimean_elite
 		}
     }
 	
@@ -256,12 +261,20 @@ focus_tree = {
 		
 		available = {
 			has_government = anarchism
-			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_robin_hoods_of_modern_times"
-			
+			add_threat = 1
+			add_manpower = 5000
+			add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1500
+                producer = UKR
+            }
+			UKR = {
+			    set_equipment_fraction = 0.95
+			}
 		}
     }
 	
@@ -284,6 +297,7 @@ focus_tree = {
 		
 		available = {
 			has_government = anarchism
+			controls_state = 137
 		}
 		
 		completion_reward = {
@@ -311,12 +325,87 @@ focus_tree = {
 		
 		available = {
 			has_government = anarchism
-			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_black_guard"
-		    load_oob = "MKH_Black_guard"
+		    custom_effect_tooltip = MKH_black_guard_infantry_divisions_tt
+            hidden_effect = {
+                if = {
+                    division_template = {
+                       name = "Black Guard"
+                       priority = 5
+                        regiments = {
+                           infantry = { x = 0 y = 0 }
+                           infantry = { x = 0 y = 1 }
+                           infantry = { x = 0 y = 2 }
+
+                           infantry = { x = 1 y = 0 }
+                           infantry = { x = 1 y = 1 }
+                           artillery = { x = 1 y = 2 }
+						   
+						   infantry = { x = 1 y = 0 }
+                           infantry = { x = 1 y = 1 }
+                           artillery = { x = 1 y = 2 }
+
+                        }
+                        support = {
+                          engineer = { x = 0 y = 0 }
+                          recon = { x = 0 y = 1 }
+						  field_hospital = { x = 0 y = 2 }
+                        }
+                    }
+                    else = {
+                        division_template = {
+                           name = "Black Guard"
+                           priority = 2
+                           division_names_group = ROM_INF_01
+                            regiments = {
+                               infantry = { x = 0 y = 0 }
+                               infantry = { x = 0 y = 1 }
+                               infantry = { x = 0 y = 2 }
+
+                               infantry = { x = 1 y = 0 }
+                               infantry = { x = 1 y = 1 }
+                               infantry = { x = 1 y = 2 }
+
+                            }
+                            support = {
+                              engineer = { x = 0 y = 0 }
+							  recon = { x = 0 y = 1 }
+                            }
+                        }
+                    }
+                }
+                random_owned_controlled_state = {
+                    limit = { ROOT = { has_full_control_of_state = PREV } }
+                    prioritize = { 46 }
+                    create_unit = {
+                        division = "name = \"Black Guard\" division_template = \"Black Guard\" start_experience_factor = 1.0"
+                        owner = MKH
+                    }
+					create_unit = {
+                        division = "name = \"Black Guard\" division_template = \"Black Guard\" start_experience_factor = 1.0"
+                        owner = MKH
+                    }
+					create_unit = {
+                        division = "name = \"Black Guard\" division_template = \"Black Guard\" start_experience_factor = 1.0"
+                        owner = MKH
+                    }
+					create_unit = {
+                        division = "name = \"Black Guard\" division_template = \"Black Guard\" start_experience_factor = 1.0"
+                        owner = MKH
+                    }
+					create_unit = {
+                        division = "name = \"Black Guard\" division_template = \"Black Guard\" start_experience_factor = 1.0"
+                        owner = MKH
+                    }
+					create_unit = {
+                        division = "name = \"Black Guard\" division_template = \"Black Guard\" start_experience_factor = 1.0"
+                        owner = MKH
+                    }
+                }
+            }
 	    }
     }
 	

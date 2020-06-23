@@ -51,8 +51,8 @@ ideas = {
 			modifier = {
 			    political_power_gain = -0.5
 			    stability_factor = -0.15
-				neutrality_drift = 0.10
-				communism_drift = 0.10
+				neutrality_drift = 0.01
+				communism_drift = 0.01
 			}
         }
         MKH_there_are_fewer_enemies = { 
@@ -66,8 +66,6 @@ ideas = {
 			modifier = {
 			    political_power_gain = -0.25
 			    stability_factor = -0.075
-				neutrality_drift = 0.05
-				communism_drift = 0.05
 			}
         } 
 		MKH_enemies_are_repressed = { 
@@ -233,6 +231,9 @@ ideas = {
 			picture = generic_manpower_bonus
 			modifier = {
 				conscription = 0.01
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				weekly_manpower = 500
 			}
 		}
 		MKH_defensive_intensive_fire = {
@@ -438,7 +439,7 @@ ideas = {
 			modifier = {
 				war_support_factor = -0.10
 				political_power_gain = -0.05
-				neutrality_drift = 0.05
+				neutrality_drift = 0.01
 			}
 		}
 		MKH_bought_crimea = {
@@ -469,6 +470,21 @@ ideas = {
 				stability_factor = 0.10
 				political_power_gain = 0.15
 				consumer_goods_factor = -0.10
+			}
+		}
+		MKH_the_formation_of_communes = {
+		    allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = the_sale_of_the_crimea_positive
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.05
 			}
 		}
 	}
