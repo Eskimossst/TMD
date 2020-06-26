@@ -138,6 +138,21 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.15
 			}
         }
+		MKH_the_our_revolution = {
+		    picture = our_revolution
+			removal_cost = -1
+			allowed = { always = no }
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				drift_defence_factor = 0.25
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
 		MKH_the_birthplace_of_anarchy = { 
             picture = spr_anarchist_society 
             removal_cost = -1 

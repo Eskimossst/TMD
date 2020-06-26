@@ -20,7 +20,7 @@ country_event = {
 		create_country_leader = {
 			name = "Theodosius Sushi"
 			desc = ""
-			picture = "gfx/leaders/UKR/Theodosius_Sushi.dds"
+			picture = "gfx/leaders/MKH/Theodosius_Sushi.dds"
 			expire = "1953.3.1"
 			ideology = anarchism_ideology
 			traits = {
@@ -339,6 +339,7 @@ country_event = {
 		name = mkh.13.a
 		MKH = {
 		    set_state_owner = 137
+			set_state_controller = 137
 			add_ideas = MKH_crimean_elite
 			add_timed_idea = {
                 idea = MKH_bought_crimea
@@ -403,11 +404,11 @@ country_event = {
 		add_manpower = -1000
 		add_popularity = {
             ideology = neutrality
-            popularity = 5.0
+            popularity = 0.05
         }
 		add_popularity = {
             ideology = communism
-            popularity = 5.0
+            popularity = 0.05
         }
 	}
 }
@@ -454,4 +455,47 @@ country_event = {
             days = 180
         }
 	}
+}
+country_event = {
+	id = mkh.17
+	title = mkh.17.t
+	desc = mkh.17.d
+	picture = GFX_report_event_
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = mkh.17.a
+		add_popularity = {
+            ideology = anarchism
+            popularity = 9.0
+        }
+		set_politics = {
+			ruling_party = anarchism
+			elections_allowed = no
+		}
+		create_country_leader = {
+	        name = "Congress of Anarchists"
+	        desc = ""
+	        picture = "gfx/leaders/ANA/Congress_of_Anarchists.dds"
+	        expire = "1965.1.1"
+	        ideology = anarchism_ideology
+	        traits = {
+		
+	        }
+		}
+		MKH = {
+		    puppet = UKR
+		}
+		MKH = {
+			set_autonomy = {
+		        target = UKR
+		        autonomous_state = autonomy_colony
+		        freedom_level = 0.2
+	        }
+		}
+    }
 }

@@ -267,6 +267,12 @@ ideologies = {
 		
 			monarchy_ideology = {
 			}
+			
+			aristocracy = {
+			}
+			
+			religious_order = {
+			}
 
 		}
 

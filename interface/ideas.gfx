@@ -4635,4 +4635,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/opium_trade.dds" 
 	}
 	
+	spriteType = {
+		name = "GFX_idea_our_revolution"
+		texturefile = "gfx/interface/ideas/our_revolution.dds" 
+	}
+	
 }

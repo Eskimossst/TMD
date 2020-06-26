@@ -81,7 +81,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		ai_will_do = {
-			factor = 100
+			factor = 50
 		}
 		
 		available = {
@@ -147,12 +147,17 @@ focus_tree = {
 		
 		available = {
 			has_government = anarchism
-			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_anarchist_society"
-		    
+		    add_manpower = 1500
+			add_popularity = {
+                ideology = anarchism
+                popularity = 0.10
+            }
+			add_stability = 0.05
+			
 	    }
 	}
 	
@@ -175,12 +180,11 @@ focus_tree = {
 		
 		available = {
 			has_government = anarchism
-			has_global_flag = MKH_always_a_lie
 		}
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_our_revolution"
-		    
+		    add_ideas = MKH_the_our_revolution
 	    }
 	}
 	
@@ -302,7 +306,10 @@ focus_tree = {
 		
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus MKH_harvest_of_the_crimea"
-		    add_ideas = MKH_harvest 
+			add_timed_idea = {
+                idea = MKH_harvest
+                days = 180
+            }
 	    }
     }
 	
@@ -358,7 +365,7 @@ focus_tree = {
                     else = {
                         division_template = {
                            name = "Black Guard"
-                           priority = 2
+                           priority = 5
                            division_names_group = ROM_INF_01
                             regiments = {
                                infantry = { x = 0 y = 0 }
@@ -367,12 +374,17 @@ focus_tree = {
 
                                infantry = { x = 1 y = 0 }
                                infantry = { x = 1 y = 1 }
-                               infantry = { x = 1 y = 2 }
+                               artillery = { x = 1 y = 2 }
+						   
+						       infantry = { x = 1 y = 0 }
+                               infantry = { x = 1 y = 1 }
+                               artillery = { x = 1 y = 2 }
 
                             }
                             support = {
                               engineer = { x = 0 y = 0 }
-							  recon = { x = 0 y = 1 }
+                              recon = { x = 0 y = 1 }
+						      field_hospital = { x = 0 y = 2 }
                             }
                         }
                     }
@@ -718,11 +730,11 @@ focus_tree = {
 			add_political_power = -150
 			add_popularity = {
               ideology = communism
-              popularity = -0.10
+              popularity = -0.15
             }
 			add_popularity = {
               ideology = neutrality
-              popularity = -0.10
+              popularity = -0.15
             }
 	    }
     }

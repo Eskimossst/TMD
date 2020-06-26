@@ -92,7 +92,7 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/BIR/Thomas_Jacomb_Hutton.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = militarism
 	traits = {
 		#
 	}
