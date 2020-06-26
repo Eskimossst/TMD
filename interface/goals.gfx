@@ -2437,4 +2437,44 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/generic_take_the_factory_sov.dds"
 	}
 	
+	SpriteType = { 
+		name = "GFX_claim_besarabia"
+		texturefile = "gfx/interface/goals/claim_besarabia.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_generic_sov_mobiliation_army"
+		texturefile = "gfx/interface/goals/generic_sov_mobiliation_army.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_land_of_revolution"
+		texturefile = "gfx/interface/goals/land_of_revolution.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_demand_of_poland"
+		texturefile = "gfx/interface/goals/demand_of_poland.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_generic_red_cavalry"
+		texturefile = "gfx/interface/goals/generic_red_cavalry.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_ukraine_at_war"
+		texturefile = "gfx/interface/goals/ukraine_at_war.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_crush_anarchist"
+		texturefile = "gfx/interface/goals/crush_anarchist.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_balcan_revolution"
+		texturefile = "gfx/interface/goals/balcan_revolution.dds"
+	}
+	
 }

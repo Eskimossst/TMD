@@ -779,7 +779,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_Destroy_the_Traitors
-		icon = GFX_goal_generic_alliance
+		icon = GFX_generic_destruction_of_political_opponents
 		cost = 10
 		prerequisite = {
 			focus = UKR_Death_or_Dishonor
@@ -1212,7 +1212,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_Alliens_Moscow
-		icon = GFX_soviet_union
+		icon = GFX_moscow_visit_sov
 		cost = 5
 		prerequisite = {
 			focus = UKR_Chornui_WORONOK
@@ -1249,7 +1249,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_New_Seeds
-		icon = GFX_focus_hol_abandon_the_gold_standard
+		icon = GFX_grain_crop_sov
 		cost = 10
 		prerequisite = {
 			focus = UKR_Alliens_Moscow
@@ -1359,7 +1359,7 @@ focus_tree = {
 #Marinochka Rubak samaya krasivaya devochka na svete
 	focus = {
 		id = UKR_Nationalization_Factory
-		icon = GFX_focus_rom_parties_end
+		icon = GFX_generic_take_the_factory_sov
 		cost = 10
 		prerequisite = {
 			focus = UKR_New_Roads
@@ -1394,7 +1394,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_Red_Army_Squads
-		icon = GFX_focus_generic_manpower
+		icon = GFX_generic_soviet_army
 		cost = 5
 		prerequisite = {
 			focus = UKR_Earth_Revolution
@@ -1480,7 +1480,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_Lwiv_Officer
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_generic_officer_school
 		cost = 5
 		prerequisite = {
 			focus = UKR_Mobilization
