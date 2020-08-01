@@ -2475,6 +2475,46 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_balcan_revolution"
 		texturefile = "gfx/interface/goals/balcan_revolution.dds"
+	}  
+	
+	SpriteType = { 
+		name = "GFX_x_goal_contact_with_foreigners"
+		texturefile = "gfx/interface/goals/x_goal_contact_with_foreigners.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_x_goal_our_customs_and_traditions"
+		texturefile = "gfx/interface/goals/x_goal_our_customs_and_traditions.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_x_goal_solve_the_problem_with_foreigners"
+		texturefile = "gfx/interface/goals/x_goal_solve_the_problem_with_foreigners.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_x_goal_csa_cooperation"
+		texturefile = "gfx/interface/goals/x_goal_csa_cooperation.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_x_goal_get_rid_of_the_foreigners"
+		texturefile = "gfx/interface/goals/x_goal_get_rid_of_the_foreigners.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_x_goal_canada_cooperation"
+		texturefile = "gfx/interface/goals/x_goal_canada_cooperation.dds"
+	} 
+	
+	SpriteType = { 
+		name = "GFX_x_goal_westernization"
+		texturefile = "gfx/interface/goals/x_goal_westernization.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_x_goal_primitivism"
+		texturefile = "gfx/interface/goals/x_goal_primitivism.dds"
 	}
 	
 }

@@ -2365,6 +2365,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_generic_purged"
 		texturefile = "gfx/event_pictures/report_event_generic_purged.dds"
+	} 
+	
+	spriteType = {
+		name = "GFX_report_event_indians_at_the_fire"
+		texturefile = "gfx/event_pictures/report_event_indians_at_the_fire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_border_indians"
+		texturefile = "gfx/event_pictures/report_event_border_indians.dds"
 	}
 	
 }

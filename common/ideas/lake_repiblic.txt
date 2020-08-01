@@ -1,0 +1,179 @@
+ideas = {
+
+    country = {
+	    LRI_backward_tribe = { 
+            picture = indian_tribe
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Отсталое племя
+			
+			modifier = {
+			    stability_factor = -0.15
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				political_advisor_cost_factor = 0.25
+				conscription_factor = -0.1
+				production_speed_buildings_factor = -0.30
+				consumer_goods_factor = 0.30
+			}
+        }
+	    LRI_blessed_with_spirits = { 
+            picture = spirit
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Благословленные духами
+			
+			modifier = {
+			    political_power_gain = 0.5
+				production_factory_max_efficiency_factor = 0.25
+				consumer_goods_factor = -0.05
+			}
+        }
+		LRI_foreigners_in_the_tribe = { 
+            picture = foreigners
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Иноземцы в племени
+			
+			modifier = {
+			    political_power_gain = -0.1
+				stability_factor = -0.05
+			}
+        }
+		LRI_cooperation_with_csa_governments = { 
+            picture = cooperation_with_csa_governments
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Сотруднечество с КША
+			
+			modifier = {
+			    political_power_gain = 0.10
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+        }
+		LRI_tribe_on_the_verge_of_war = { 
+            picture = tribe_on_the_verge_of_war
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Племя на пороге войны
+			
+			modifier = {
+			    war_support_factor = 0.15
+			    defensive_war_stability_factor = 0.15
+				justify_war_goal_time = -0.25
+			}
+        }
+		LRI_cooperation_with_canada_governments = { 
+            picture = cooperation_with_canada_governments
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Сотруднечество с Канадой
+			
+			modifier = {
+			    political_power_gain = 0.10
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+        }
+		LRI_dependence_on_the_csa = { 
+            picture = 0
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Зависимость от КША
+			
+			modifier = {
+			    political_power_gain = 0.25
+				stability_factor = -0.10
+				consumer_goods_factor = -0.10
+			}
+        }
+		LRI_industrial_control = { 
+            picture = 0
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Промышленный контроль
+			
+			modifier = {
+			    production_factory_max_efficiency_factor = 0.10
+			    production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+				research_speed_factor = 0.10
+			}
+        }
+		
+		LRI_the_tribe_is_developing = { 
+            picture = 0
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Племя развивается 
+			
+			modifier = {
+			    stability_factor = -0.10
+				trade_laws_cost_factor = 0.15
+				mobilization_laws_cost_factor = 0.15
+				political_advisor_cost_factor = 0.15
+				conscription_factor = -0.05
+				production_speed_buildings_factor = -0.15
+				consumer_goods_factor = 0.15
+			}
+        } 
+		LRI_the_tribe_adapts = { 
+            picture = 0
+            removal_cost = -1 
+			allowed = { always = no }
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			#Племя адаптируется 
+			
+			modifier = {
+			    stability_factor = -0.05
+				trade_laws_cost_factor = 0.20
+				mobilization_laws_cost_factor = 0.20
+				political_advisor_cost_factor = 0.20
+				conscription_factor = -0.07
+				production_speed_buildings_factor = -0.25
+				consumer_goods_factor = 0.25
+			}
+        }
+	}
+}

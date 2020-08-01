@@ -4638,6 +4638,41 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_our_revolution"
 		texturefile = "gfx/interface/ideas/our_revolution.dds" 
+	}   
+	
+	spriteType = {
+		name = "GFX_idea_indian_tribe"
+		texturefile = "gfx/interface/ideas/indian_tribe.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_spirit"
+		texturefile = "gfx/interface/ideas/spirit.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_foreigners"
+		texturefile = "gfx/interface/ideas/foreigners.dds" 
+	} 
+	
+	spriteType = {
+		name = "GFX_idea_cooperation_with_csa_governments"
+		texturefile = "gfx/interface/ideas/cooperation_with_csa_governments.dds" 
+	} 
+	
+	spriteType = {
+		name = "GFX_idea_tribe_on_the_verge_of_war"
+		texturefile = "gfx/interface/ideas/tribe_on_the_verge_of_war.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_cooperation_with_csa_governments"
+		texturefile = "gfx/interface/ideas/cooperation_with_csa_governments.dds" 
+	}
+	
+	spriteType = {
+		name = "GFX_idea_cooperation_with_canada_governments"
+		texturefile = "gfx/interface/ideas/cooperation_with_canada_governments.dds" 
 	}
 	
 }

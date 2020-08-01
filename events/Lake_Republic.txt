@@ -1,0 +1,160 @@
+add_namespace = lri
+
+
+country_event = {
+	id = lri.1
+	title = lri.1.t
+	desc = lri.1.d
+	picture = GFX_report_event_indians_at_the_fire
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	#Получить благословленние Матери природы
+	
+	option = {
+		name = lri.1.a
+		add_timed_idea = {
+            idea = LRI_blessed_with_spirits
+            days = 180
+        }
+	}
+}
+
+country_event = {
+	id = lri.2
+	title = lri.2.t
+	desc = lri.2.d
+	picture = GFX_report_event_border_indians
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	#Постороние элементы
+	
+	option = {
+		name = lri.2.a
+		add_political_power = -10
+	}
+}
+
+country_event = {
+	id = lri.3
+	title = lri.3.t
+	desc = lri.3.d
+	picture = GFX_report_event_
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	#Решение вождя
+	
+	option = {
+		name = lri.3.a
+		hidden_effect = {
+            set_country_flag = cooperation_with_the_south
+        }
+		add_political_power = 50
+	}
+	option = {
+		name = lri.3.b
+		hidden_effect = {
+            set_country_flag = cooperation_with_the_north
+        }
+		add_political_power = 50
+	}
+	option = {
+		name = lri.3.c
+		hidden_effect = {
+            set_country_flag = foreigners_killed
+        }
+	}
+}
+
+country_event = {
+	id = lri.4
+	title = lri.4.t
+	desc = lri.4.d
+	picture = GFX_report_event_
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	#Визит в Ричмонд
+	
+	option = {
+		name = lri.4.a
+		
+	}
+}
+
+country_event = {
+	id = lri.5
+	title = lri.5.t
+	desc = lri.5.d
+	picture = GFX_report_event_
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	#Племя готовится к войне
+	
+	option = {
+		name = lri.5.a
+		
+	}
+	option = {
+		name = lri.5.b
+		add_stability = -0.05
+		hidden_effect = {
+            set_country_flag = industrialist_was_spared
+        }
+	}
+}
+
+country_event = {
+	id = lri.6
+	title = lri.6.t
+	desc = lri.6.d
+	picture = GFX_report_event_
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	#Племя варваров убило наших дипломатов!
+	
+	option = {
+		name = lri.6.a
+		add_political_power = -100
+	}
+}
+
+country_event = {
+	id = lri.7
+	title = lri.7.t
+	desc = lri.7.d
+	picture = GFX_report_event_
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	#Визит в Оттаву
+	
+	option = {
+		name = lri.7.a
+		
+	}

@@ -1011,7 +1011,7 @@ focus_tree = {
 		icon = GFX_generic_agrarian_reform
 		prerequisite = { focus = MKH_create_a_precedent focus = MKH_from_old_to_small focus = MKH_to_rob_the_ukrainian_locomotives }
 		relative_position_id = MKH_create_a_precedent
-		mutually_exclusive = { focus = MKH_industrialization  }
+		mutually_exclusive = { focus = MKH_industrialization }
 		x = 2
 		y = 1
 		cost = 10

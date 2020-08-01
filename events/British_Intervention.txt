@@ -41,16 +41,19 @@ country_event = {
 		}
 		ai_chance = 95
 		send_equipment = {
-            equipment = infantry_equipment
+            equipment = infantry_equipment_0
             amount = -1500
+			target = ENG
         }
 		send_equipment = {
-			equipment = support_equipment 
+			equipment = support_equipment_1 
 			amount = -1000
+			target = ENG
 		}
 		send_equipment = {
-			equipment = artillery_equipment
+			equipment = artillery_equipment_1
 			amount = -500
+			target = ENG
 		}
 		BIR = {
 			country_event = {
@@ -76,27 +79,27 @@ country_event = {
 	option = {
 		name = bir.3.a 
 		add_equipment_to_stockpile = {
-			type = infantry_equipment 
+			type = infantry_equipment_0 
 			amount = 1500
 			producer = ENG
 		}
 		add_equipment_to_stockpile = {
-			type = support_equipment
+			type = support_equipment_1
 			amount = 1000
 			producer = ENG
 		}
 		add_equipment_to_stockpile = {
-			type = artillery_equipment
+			type = artillery_equipment_1
 			amount = 500
 			producer = ENG
 		}
 		add_opinion_modifier = {
 			target = ENG
-			modifier = landlease_accepted
+			modifier = BIR_landlease_accepted
 		}
 		reverse_add_opinion_modifier = {
 			target = ENG
-			modifier = landlease_accepted
+			modifier = BIR_landlease_accepted
 		}
 	}
 } 

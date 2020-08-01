@@ -9,7 +9,7 @@ state={
 	state_category = metropolis
 
 	history={
-		owner = USA
+		owner = LRI
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
@@ -17,22 +17,19 @@ state={
 			air_base = 4
 
 		}
-		add_core_of = USA
+		add_core_of = LRI
 		victory_points = {
-			6710 20 
+			9747 15
 		}
+		victory_points = {
+			6710 20
+		}  
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 7
 
 			}
-
 		}
-		1941.11.1 = {
-			owner = CAN
-			add_core_of = CAN
-		}
-
 	}
 
 	provinces={

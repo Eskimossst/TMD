@@ -727,3 +727,7 @@ WUK = {
 	color = rgb { 180 76 67 }
 	color_ui = rgb { 180 76 67 }
 }
+LRI = {
+	color = rgb { 75 113 145 }
+	color_ui = rgb { 77 113 152 }
+}

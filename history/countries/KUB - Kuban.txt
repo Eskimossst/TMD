@@ -95,6 +95,26 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Vlad Merzulov"
+	picture = "gfx/leaders/generic/generic_russia_3.dds"
+	expire = "1965.1.1"
+	ideology = monarchy_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Congress of Anarchists"
+	picture = "gfx/leaders/ANA/Congress_of_Anarchists.dds"
+	expire = "1965.1.1"
+	ideology = anarchism_ideology
+	traits = {
+		#
+	}
+}
+
 1939.1.1 = {
 	set_politics = {
 		ruling_party = communism

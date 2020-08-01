@@ -20,5 +20,10 @@ opinion_modifiers = {
 	BIR_puppet_accepted = { value = 25 }
 	BIR_puppet_denied = { value = -25 }
 	BIR_pounds_currency = { value = 25 }
-	BIR_rubles_currency = { value = -25 
+	BIR_rubles_currency = { value = -25 }
+	
+	#LRI
+	LRI_our_diplomats_were_killed = { value = -25 }
+	LRI_cooperation_with_the_north = { value = 25 }
+    LRI_cooperation_with_the_south = { value = 25 }
 }

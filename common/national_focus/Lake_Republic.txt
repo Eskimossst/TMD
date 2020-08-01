@@ -1,0 +1,468 @@
+focus_tree = {
+	id = lri_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LRI
+		}
+	}
+
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1700 }
+	
+	focus = {
+		id = LRI_our_customs_and_traditions #Наши обычаи и традиции
+		icon = GFX_x_goal_our_customs_and_traditions
+		x = 1
+		y = 0
+		cost = 2
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_our_customs_and_traditions"
+			add_stability = 0.05
+			add_political_power = 50
+			country_event = { id = lri.1 days = 1 } 
+		}
+	}
+	
+	focus = {
+		id = LRI_contact_with_foreigners #Контакт с иноземцами
+		icon = GFX_x_goal_contact_with_foreigners
+		prerequisite = { focus = LRI_our_customs_and_traditions }
+		relative_position_id = LRI_our_customs_and_traditions
+		x = 0
+		y = 1
+		cost = 5
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_contact_with_foreigners"
+			add_ideas = LRI_foreigners_in_the_tribe
+			country_event = { id = lri.2 days = 5 }
+		} 
+	}
+	
+	focus = {
+		id = LRI_solve_the_problem_with_foreigners #Решить проблему с иноземцами
+		icon = GFX_x_goal_solve_the_problem_with_foreigners
+		prerequisite = { focus = LRI_contact_with_foreigners }
+		relative_position_id = LRI_contact_with_foreigners
+		x = 0
+		y = 1
+		cost = 5
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_idea = LRI_foreigners_in_the_tribe
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_solve_the_problem_with_foreigners"
+			country_event = { id = lri.3 days = 5 }
+		} 
+	}
+	
+	focus = {
+		id = LRI_westernization #Вестернизация
+		icon = GFX_x_goal_westernization
+		mutually_exclusive = { focus = LRI_insulation }
+		x = 5
+		y = 0
+		cost = 5
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			OR = {
+			    has_country_flag = industrialist_was_spared
+			    has_country_flag = cooperation_with_the_south
+				has_country_flag = cooperation_with_the_north
+			}
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_westernization"
+			add_stability = 0.05 
+			add_political_power = 150
+			swap_ideas = {
+                remove_idea = LRI_backward_tribe
+                add_idea = LRI_the_tribe_is_developing
+            }
+		} 
+	}
+	
+	focus = {
+		id = LRI_insulation #Изоляция
+		icon = GFX_x_goal_primitivism
+		mutually_exclusive = { focus = LRI_westernization }
+		x = 9
+		y = 0
+		cost = 5
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = foreigners_killed
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_insulation"
+			add_stability = 0.10
+			add_war_support = 0.5
+			add_manpower = 3000
+			swap_ideas = {
+                remove_idea = LRI_backward_tribe
+                add_idea = LRI_the_tribe_adapts
+            }
+		} 
+	}
+	
+	focus = {
+		id = LRI_cooperation_with_csa #Сотруднечество с КША
+		icon = GFX_x_goal_csa_cooperation
+		prerequisite = { focus = LRI_solve_the_problem_with_foreigners }
+		relative_position_id = LRI_solve_the_problem_with_foreigners
+		mutually_exclusive = { focus = LRI_get_rid_of_the_foreigners focus = LRI_cooperation_with_canada }
+		x = 0
+		y = 1
+		cost = 5
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = cooperation_with_the_south
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_cooperation_with_csa"
+			add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+            }
+			country_event = { id = lri.4 days = 5 }
+			remove_ideas = LRI_foreigners_in_the_tribe
+			add_ideas = LRI_cooperation_with_csa_governments
+			reverse_add_opinion_modifier = {
+                target = USA
+                modifier = LRI_cooperation_with_the_south
+            }
+			USA = {
+			    give_guarantee = LRI
+			}
+		} 
+	}
+	
+	focus = {
+		id = LRI_american_investments #Американские инвестиции
+		icon = GFX_goal_generic_positive_trade_relations
+		prerequisite = { focus = LRI_cooperation_with_csa }
+		relative_position_id = LRI_cooperation_with_csa
+		x = -1
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_idea = LRI_cooperation_with_csa_governments
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_american_investments"
+			swap_ideas = {
+                remove_idea = LRI_cooperation_with_csa_governments
+                add_idea = LRI_dependence_on_the_csa
+            }
+			393 = {			
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+				add_extra_state_shared_building_slots = 1
+		    }
+			394 = {			
+				add_building_construction = { 
+					type = industrial_complex
+					level = 1
+					instant_build = yes 
+				}
+				add_extra_state_shared_building_slots = 1
+		    }
+			393 = {			
+				add_building_construction = { 
+					type = infrastructure
+					level = 3
+					instant_build = yes 
+				}
+		    }
+			394 = {			
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+		    }
+		} 
+	}
+	
+	focus = {
+		id = LRI_industrial_integration_policy #Промышленная интеграционная политика
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = LRI_cooperation_with_csa }
+		relative_position_id = LRI_cooperation_with_csa
+		x = 1
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_industrial_integration_policy"
+			add_stability = 0.15
+			add_political_power = 50
+			add_ideas = LRI_industrial_control
+			393 = {			
+				add_building_construction = { 
+					type = arms_factory
+					level = 1
+					instant_build = yes 
+				}
+				add_extra_state_shared_building_slots = 1
+		    }
+			394 = {			
+				add_building_construction = { 
+					type = arms_factory
+					level = 1
+					instant_build = yes 
+				}
+				add_extra_state_shared_building_slots = 1
+		    }
+		} 
+	}
+	
+	focus = {
+		id = LRI_construction_of_airfields #Строительство аэродромов
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = LRI_american_investments }
+		relative_position_id = LRI_american_investments
+		x = 0
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_construction_of_airfields"
+		    air_experience = 30
+			add_tech_bonus = {
+			  name = air_doc_bonus
+			  bonus = 0.75
+			  uses = 3
+			  category = air_doctrine
+		    }
+			add_equipment_to_stockpile = {
+                type = fighter_equipment
+                amount = 15
+                producer = USA
+            }
+			394 = {			
+				add_building_construction = { 
+					type = air_base
+					level = 3
+					instant_build = yes 
+				}
+		    }
+		} 
+	} 
+	
+	focus = {
+		id = LRI_construction_of_the_pentagon_branch #Строительство филиала пентагона
+		icon = GFX_focus_usa_build_the_pentagon
+		prerequisite = { focus = LRI_industrial_integration_policy }
+		relative_position_id = LRI_industrial_integration_policy
+		x = 0
+		y = 1
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_idea = LRI_dependence_on_the_csa 
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_construction_of_airfields"
+		    
+		} 
+	}
+	
+	
+	focus = {
+		id = LRI_get_rid_of_the_foreigners #Избавиться от иноземцев
+		icon = GFX_x_goal_get_rid_of_the_foreigners
+		prerequisite = { focus = LRI_solve_the_problem_with_foreigners }
+		relative_position_id = LRI_solve_the_problem_with_foreigners
+		mutually_exclusive = { focus = LRI_cooperation_with_csa focus = LRI_cooperation_with_canada }
+		x = 4
+		y = 1
+		cost = 5
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = foreigners_killed
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_get_rid_of_the_foreigners"
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+            }
+			country_event = { id = lri.5 days = 1 }
+			remove_ideas = LRI_foreigners_in_the_tribe
+			add_ideas = LRI_tribe_on_the_verge_of_war
+			reverse_add_opinion_modifier = {
+				target = USA
+				modifier = LRI_our_diplomats_were_killed
+			}
+			reverse_add_opinion_modifier = {
+				target = CAN
+				modifier = LRI_our_diplomats_were_killed
+			}
+			USA = { country_event = { id = lri.6 days = 20 } }
+			CAN = { country_event = { id = lri.6 days = 20 } }
+		} 
+	}
+	
+	focus = {
+		id = LRI_cooperation_with_canada #Сотруднечество с Канадой
+		icon = GFX_x_goal_canada_cooperation
+		prerequisite = { focus = LRI_solve_the_problem_with_foreigners }
+		relative_position_id = LRI_solve_the_problem_with_foreigners
+		mutually_exclusive = { focus = LRI_get_rid_of_the_foreigners focus = LRI_cooperation_with_canada }
+		x = 8
+		y = 1
+		cost = 5
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		available = {
+			has_country_flag = LRI_cooperation_with_the_north
+		}
+		
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName] ([Root.GetTag]): Focus LRI_cooperation_with_canada"
+			add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
+			country_event = { id = lri.7 days = 5 }
+			remove_ideas = LRI_foreigners_in_the_tribe
+			add_ideas = LRI_cooperation_with_canada_governments
+			reverse_add_opinion_modifier = {
+                target = CAN
+                modifier = LRI_cooperation_with_the_north
+            }
+			CAN = {
+			    give_guarantee = LRI
+			}
+		} 
+	}
+}
